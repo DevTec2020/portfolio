@@ -1,29 +1,84 @@
+
+.img-eu{
+  height: 50vh !important; 
+  width: 100%;
+  border-radius: 5vh;
+  
+}
+.text-eu{
+  font-size: 20px;
+  width: 75vh
+}
+
 .pin-tec{
-    background-color: white;
-    color: #007bff;
-    margin-top: 2vh;
-    margin-right: 3vh;
-    padding: 2.3vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: #007bff;
+  margin-top: 2vh;
+  margin-right: 3vh;
+  padding: 2.3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-indicators button {
-    background-color: black !important; /* Cor dos indicadores inativos */
-  }
+  background-color: black !important; /* Cor dos indicadores inativos */
+}
   
 .carousel-indicators .active {
-    background-color: #0d6efd !important; /* Cor do indicador ativo */
-  }
+  background-color: #0d6efd !important; /* Cor do indicador ativo */
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
-    background-color: #0d6efd;
-    border-radius: 10%;
+  background-color: #0d6efd; /* Cor dos botões de avançar e voltar */
+  border-radius: 10%;
 }
 
 .border-contact{
-    border: 10px dashed #007bff;
+  border: 10px dashed #007bff;
+}
+
+@media (max-width: 2560px) and (min-width:1440px){
+  .img-eu{
+    height: 55vh !important ;
+  }
+  .text-eu{
+    font-size: 20px;
+    
+  }
+
+}
+@media (max-width:1200px){
+  .img-eu{
+    height: 45vh !important;
+  }
+
+}
+
+@media (max-width:1080px){
+  .img-eu{
+    height: 35vh !important;
+  }
+
+}
+@media (max-width:790px) {
+  .img-eu{
+    height: 45vh !important;
+  }
+  
+}
+@media (max-width: 425px) {
+  .img-eu{
+    height: 35vh !important;
+  }
+
+
+}
+@media (max-width:320px) {
+  .img-eu{
+    font-size: 25vh !important;
+  }
+  
 }
