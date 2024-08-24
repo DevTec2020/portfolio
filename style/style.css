@@ -1,11 +1,12 @@
 
-.img-eu{
-  height: 50vh !important; 
+.img-radios,
+.img-circle{
+  height: 55vh !important; 
   width: 100%;
   border-radius: 5vh;
-  
 }
-.text-eu{
+
+.text-sobre{
   font-size: 20px;
   width: 75vh
 }
@@ -13,9 +14,8 @@
 .pin-tec{
   background-color: white;
   color: #007bff;
-  margin-top: 2vh;
-  margin-right: 3vh;
-  padding: 2.3vh;
+  margin: 0.5rem;
+  padding: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,45 +40,91 @@
   border: 10px dashed #007bff;
 }
 
-@media (max-width: 2560px) and (min-width:1440px){
-  .img-eu{
-    height: 55vh !important ;
-  }
-  .text-eu{
-    font-size: 20px;
-    
-  }
 
-}
 @media (max-width:1200px){
-  .img-eu{
+  .img-radios{
+    height: 50vh !important;
+    border-radius: 5vh;
+  }
+  
+  .img-circle{
     height: 45vh !important;
+  }
+  
+  .text-sobre{
+    font-size: 20px;
+    width: 65vh
   }
 
 }
 
 @media (max-width:1080px){
-  .img-eu{
+  .img-radios{
+    height: 45vh !important;
+    border-radius: 5vh;
+  }
+  .img-circle{
     height: 35vh !important;
   }
 
+  .text-sobre{
+    font-size: 17px;
+    width: 55vh
+  }
+
+  .pin-tec{
+    background-color: white;
+    color: #007bff;
+    margin: 0.5rem;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
 }
+
 @media (max-width:790px) {
-  .img-eu{
-    height: 45vh !important;
+  .img-radios{
+    height: 40vh !important;
+    border-radius: 5vh;
+  }
+  .img-circle{
+    height: 25vh !important;
   }
   
+  .text-sobre{
+    font-size: 20px;
+    width: 50vh
+  }
 }
 @media (max-width: 425px) {
-  .img-eu{
+  .img-radios{
     height: 35vh !important;
+    border-radius: 5vh;
+  }
+  .img-circle{
+    height: 30vh !important;
   }
 
+  .text-sobre{
+    font-size: 10px;
+    
+  }
 
 }
 @media (max-width:320px) {
-  .img-eu{
-    font-size: 25vh !important;
+  .img-radios{
+    height: 30vh !important;
+    border-radius: 5vh;
+  }
+  .img-circle{
+    height: 25vh !important;
   }
   
+  .text-sobre{
+    font-size: 20px;
+    width: 40vh
+  }
 }
