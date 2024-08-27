@@ -23,7 +23,7 @@
   <body class="bg-body">
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">&lt;LeoBatista/&gt;</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,29 +52,128 @@
     </nav>  
 
     <!--Home-->
-    <div id="home" class="container-fluid d-flex justify-content-evenly" style="height: 100vh;">
-        <div class="d-flex justify-content-center flex-column">
+    <div id="home" class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+      <div class="row align-items-center w-100">
+        <div class="col-md-6 text-center">
           <div>
             <h3>&lt;Leonardo Batista/&gt;</h3>
             <h1 class="text-primary">Software Web Developer</h1>
             <p>Desenvolvedor Front-end</p>
           </div>
-          <div class="pt-3 d-flex">
-            <div class="me-4"><a href="http://www.linkedin.com/in/DevTec-LeoBatista"><button type="button" class="btn btn-outline-primary"><i class="bi bi-linkedin"> </i>Linkedin</button></a></div>
-            <div><a href="https://github.com/DevTec2020"><button type="button" class="btn btn-outline-primary"><i class="bi bi-git"> </i>GitHub</button></a></div>
+          <div class="pt-3 d-flex justify-content-center">
+            <div class="me-4">
+              <a href="http://www.linkedin.com/in/DevTec-LeoBatista"><button type="button" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i> Linkedin</button></a>
+            </div>
+            <div>
+              <a href="https://github.com/DevTec2020"><button type="button" class="btn btn-outline-primary"><i class="bi bi-git"></i> GitHub</button></a>
+            </div>
           </div>
         </div>
-        <div class="pt-5">
+        <div class="col pt-5 text-center">
           <img src="./img/eu_sem.png" class="img-radios"/>
         </div>
+      </div>
+    </div>
+    
+    <!--Sobre mim-->
+    <div id="sobre" class="container d-flex justify-content-center" style="height: 50vh">
+      <div class="row d-flex align-items-center flex-column w-100">
+        <h2 class="text-primary text-center">&lt;Sobre mim/&gt;</h2>
+        <p class="text-sobre text-center">
+          Sou um desenvolvedor web front-end e consultor de suporte de TI com paixão por criar soluções tecnológicas eficientes e inovadoras. 
+          Minha jornada começou na área de manutenção de computadores e suporte técnico, onde aprendi a solucionar problemas e aprimorar sistemas. 
+          Com o tempo, meu interesse evoluiu para o desenvolvimento web, onde continuo expandindo meus conhecimentos e habilidades, buscando sempre a excelência em cada projeto. 
+          Ao longo dessa trajetória, conquistei certificações que validam minha expertise e compromisso com a qualidade, reforçando minha dedicação ao aprimoramento contínuo.
+        </p>
+        <div class="pt-3 d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-primary"><i class="bi bi-file-earmark-pdf-fill"> </i> Curriculo</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Tecnologias-->
+    <div id="tecnologias" class="container d-flex justify-content-center" style="height: 50vh">
+      <div class="row d-flex align-items-center flex-column w-100">
+        <div>
+          <h2 class="text-primary">&lt;Tecnologias/&gt;</h2>
+          <p style="width: 65vh">
+            Minha experiência em suporte e desenvolvimento web me permitiu dominar uma variedade de tecnologias além de ferramentas e frameworks que utilizo para criar soluções eficientes e dinâmicas:
+          </p>
+        </div>
+        <div class="pt-4 d-flex flex-wrap justify-content-evenly" style="width: auto;">
+          <div class="pin-tec">
+            <div><img src="./img/Skills/html.png" style="height: 5vh;"></div>
+            <div class="pt-1">HTML</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/css.png" style="height: 5vh;"></div>
+            <div class="pt-1">CSS</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/js.png" style="height: 5vh;"></div>
+            <div class="pt-1">JS</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/bootstrap.png" class="" style="height: 5vh;"></div>
+            <div class="pt-1">Bootstrap</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/sass.png" style="height: 5vh;"></div>
+            <div class="pt-1">Sass</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/webpack.png" style="height: 5vh;"></div>
+            <div class="pt-1">Webpack</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/babel.png" style="height: 5vh;"></div>
+            <div class="pt-1">Babel</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/sql.png" style="height: 5vh;"></div>
+            <div class="pt-1">SQL</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/firebird.png" style="height: 5vh;"></div>
+            <div class="pt-1">Firebird</div>
+          </div>
+          <div class="pin-tec">
+            <div><img src="./img/Skills/postgres.png" style="height: 5vh;"></div>
+            <div class="pt-1">Postgres</div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
 
 
-    <!--Sobre mim-->
-    <div id="sobre" class="container pt-5" style="height: 100vh;">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Sobre mim old-->
+    <div id="sobre" class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
       <div class="container-fluid d-flex align-items-center">
-        <div class="row">
-          <h2 class="text-primary text-center">&lt;Sobre mim/&gt;</h2>
+        <div class="row align-items-center w-100">
+          
           <div class="col pt-3 ">
             <div class="d-flex justify-content-center flex-column">
               <div>
