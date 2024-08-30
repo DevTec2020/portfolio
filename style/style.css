@@ -3,52 +3,22 @@
   border-radius: 5vh;
 }
 
-.text-sobre{
-  font-size: 20px;
-  width: 75vh
+.tech-icon{
+  height: 5vh;
 }
-
-.pin-tec{
-  background-color: white;
+.tech-box{
   color: #007bff;
-  margin: 0.5rem;
-  padding: 2vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 1vh;
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 
 
-.carousel-indicators button {
-  background-color: black !important; /* Cor dos indicadores inativos */
-}
-  
-.carousel-indicators .active {
-  background-color: #0d6efd !important; /* Cor do indicador ativo */
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-  background-color: #0d6efd; /* Cor dos botões de avançar e voltar */
-  border-radius: 10%;
-}
-
-.border-contact{
-  border: 10px dashed #007bff;
-}
-
-
 @media (max-width:1200px){
   .img-radios{
     height: 50vh !important;
     border-radius: 5vh;
-  }
-
-  .text-sobre{
-    font-size: 20px;
-    width: 65vh
   }
 
 }
@@ -59,22 +29,6 @@
     border-radius: 5vh;
   }
 
-  .text-sobre{
-    font-size: 25px;
-    width: 55vh
-  }
-
-  .pin-tec{
-    background-color: white;
-    color: #007bff;
-    margin: 0.5rem;
-    padding: 1vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  }
 }
 
 @media (max-width:790px) {
@@ -83,21 +37,11 @@
     border-radius: 5vh;
   }
 
-  .text-sobre{
-    font-size: 20px;
-    width: 40vh
-  }
 }
 @media (max-width: 425px) {
   .img-radios{
     height: 35vh !important;
     border-radius: 5vh;
-  }
-
-  .text-sobre{
-    font-size: 10px;
-    width: 40vh
-    
   }
 
 }
@@ -107,8 +51,4 @@
     border-radius: 5vh;
   }
 
-  .text-sobre{
-    font-size: 20px;
-    width: 40vh
-  }
 }

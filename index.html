@@ -9,7 +9,7 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
 
-    <!--CSS Animation-->
+    <!--CSS Lib Animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--CSS /style-->
@@ -49,7 +49,7 @@
     </nav>  
 
     <!--Home-->
-    <div id="home" class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <section id="home" class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
       <div class="row align-items-center w-100">
         <div class="col-md-6 text-center">
           <div>
@@ -67,83 +67,87 @@
           </div>
         </div>
         <div class="col pt-5 text-center">
-          <img src="./img/eu_sem.png" class="img-radios"/>
+          <img src="./img/Person.png" class="img-radios" alt="Foto Perfil" />
         </div>
       </div>
-    </div>
+    </section>
     
     <!--Sobre mim-->
-    <div id="sobre" class="container d-flex justify-content-center align-items-center" style="height: 100vh">
-      <div class="row align-items-center flex-column w-100">
-        <!--Sobre-->
-        <h2 class="text-primary text-center">&lt;Sobre mim/&gt;</h2>
-        <p class="text-center text-sobre">
-          Minha jornada começou na área de manutenção de computadores e suporte técnico, onde aprendi a solucionar problemas e gerar scripts para aprimorar bancos. 
-          Com o tempo, meu interesse evoluiu para o desenvolvimento web, onde continuo expandindo meus conhecimentos e habilidades, buscando sempre a excelência em cada projeto. 
-        </p>
-        <div class="pt-3 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-primary"><i class="bi bi-file-earmark-pdf-fill"> </i> Curriculo</button>
+    <section id="sobre" class="container d-flex justify-content-center align-items-center py-5" style="min-height: 100vh;">
+      <div class="row align-items-center w-100">
+        <div class="col-md-6 text-center">
+          <!--Sobre-->
+          <h2 class="text-primary">&lt;Sobre mim/&gt;</h2>
+          <p>
+            Minha jornada começou na área de manutenção de computadores e suporte técnico, onde aprendi a solucionar problemas e gerar scripts para aprimorar bancos. 
+            Com o tempo, meu interesse evoluiu para o desenvolvimento web, onde continuo expandindo meus conhecimentos e habilidades, buscando sempre a excelência em cada projeto. 
+          </p>
+          <div class="pt-3">
+            <a href="/Curriculo.pdf" target="_blank" class="btn btn-outline-primary">
+              <i class="bi bi-file-earmark-pdf-fill"></i> Currículo
+            </a>
+          </div>
         </div>
-        <br><br>
+        
         <!--Tecnologias-->
-        <div class="pt-5 d-flex align-items-center flex-column w-100">
-          <h2 class="text-primary text-center">&lt;Tecnologias/&gt;</h2>
-          <p class="text-center text-sobre">
+        <div class="col pt-5 text-center">
+          <h2 class="text-primary">&lt;Tecnologias/&gt;</h2>
+          <p>
             Minha experiência em suporte e desenvolvimento web me permitiu dominar uma variedade de tecnologias além de ferramentas e frameworks que utilizo para criar soluções eficientes e dinâmicas:
           </p>
-          <div class="pt-3 d-flex flex-wrap justify-content-center">
-            <div class="pin-tec">
-              <div><img src="./img/Skills/html.png" style="height: 5vh;"></div>
+          <div class="py-3 d-flex flex-wrap justify-content-center">
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/html.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">HTML</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/css.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/css.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">CSS</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/js.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/js.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">JS</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/bootstrap.png" class="" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/bootstrap.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">Bootstrap</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/sass.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/sass.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">Sass</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/webpack.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/webpack.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">Webpack</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/babel.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/babel.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">Babel</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/sql.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/sql.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">SQL</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/firebird.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/firebird.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">Firebird</div>
             </div>
-            <div class="pin-tec">
-              <div><img src="./img/Skills/postgres.png" style="height: 5vh;"></div>
+            <div class="col-md-2 col-3 text-center mb-3 tech-box">
+              <div><img src="./img/Skills/postgres.png" class="img-fluid tech-icon"></div>
               <div class="pt-1">Postgres</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!--Projetos-->
-    <div id="projetos" class="container d-flex justify-content-center flex-column py-5">
+    <section id="projetos" class="container d-flex justify-content-center flex-column py-5" style="min-height: 100vh;">
       <h2  class="text-primary text-center">&lt;Projetos/&gt;</h2>
         
       <!--SiteNote-->
-      <div class="row align-items-center py-4">
+      <div class="row align-items-center py-4" data-aos="fade-right">
         <div class="col-lg-6">
           <h4>SiteNote</h4>
           <p class="">O SiteNote é uma aplicação web projetada para ajudar usuários a criar e organizar suas anotações de forma eficiente e intuitiva. 
@@ -169,7 +173,7 @@
       </div>
 
       <!--DbIndex--> 
-      <div class="row align-items-center py-4 pt-4">
+      <div class="row align-items-center py-4 pt-4" data-aos="fade-left">
         <div class="col-lg-6 pt-3 pt-lg-0">
           <img src="./img/Projetos/DbIndex.png"  alt="Previa SiteNote" class="img-fluid rounded">
         </div>
@@ -197,7 +201,7 @@
       </div>
       
       <!--FormNasa-->
-      <div class="row align-items-center py-4">
+      <div class="row align-items-center py-4" data-aos="fade-right">
         <div class="col-lg-6">
           <h4>FormNasa</h4>
           <p class="">
@@ -225,7 +229,7 @@
       </div>
 
       <!--SitePokemon--> 
-      <div class="row align-items-center py-4">
+      <div class="row align-items-center py-4" data-aos="fade-left">
         <div class="col-lg-6 pt-3 pt-lg-0">
           <img src="./img/Projetos/SitePokemon.png"  alt="Previa SiteNote" class="img-fluid rounded">
         </div>
@@ -251,34 +255,34 @@
         </div>
       </div>         
       
-   </div>
+   </section>
 
 
-<!--Contato-->
-<div id="contato" class="container-fluid d-flex align-items-center justify-content-evenly p-3" style="min-height: 50vh;">
-  <div class="d-flex justify-content-center flex-column">
-    <div class="mb-4">
-      <h2 class="text-primary text-center">&lt;Contato/&gt;</h2>
-    </div>
-    <div class="p-4 d-flex align-items-center ">
-      <a href="https://www.linkedin.com/in/DevTec-LeoBatista" target="_blank" class="mb-3">
-        <img src="./img/Footer/linkedin.png" alt="LinkedIn de Leonardo Batista" class="img-fluid pe-4" style="max-height: 15vh;">
-      </a>
+    <!--Contato-->
+    <section id="contato" class="container-fluid d-flex align-items-center justify-content-evenly p-3" style="min-height: 50vh;">
+      <div class="d-flex justify-content-center flex-column">
+        <div class="mb-4">
+          <h2 class="text-primary text-center">&lt;Contato/&gt;</h2>
+        </div>
+        <div class="p-4 d-flex align-items-center ">
+          <a href="https://www.linkedin.com/in/DevTec-LeoBatista" target="_blank" class="mb-3">
+            <img src="./img/Footer/linkedin.png" alt="LinkedIn de Leonardo Batista" class="img-fluid pe-4" style="max-height: 15vh;">
+          </a>
 
-      <a href="mailto:leonardo.silva.inf@gmail.com" target="_blank" class="mb-3">
-        <img src="./img/Footer/Email.png" alt="Enviar email para Leonardo Batista" class="img-fluid pe-4" style="max-height: 15vh;">
-      </a>
+          <a href="mailto:leonardo.silva.inf@gmail.com" target="_blank" class="mb-3">
+            <img src="./img/Footer/Email.png" alt="Enviar email para Leonardo Batista" class="img-fluid pe-4" style="max-height: 15vh;">
+          </a>
 
-      <a href="https://github.com/DevTec2020" target="_blank" class="mb-3">
-        <img src="./img/Footer/github.png" alt="GitHub de Leonardo Batista" class="img-fluid pe-4" style="max-height: 15vh;">
-      </a>
+          <a href="https://github.com/DevTec2020" target="_blank" class="mb-3">
+            <img src="./img/Footer/github.png" alt="GitHub de Leonardo Batista" class="img-fluid pe-4" style="max-height: 15vh;">
+          </a>
 
-      <a href="tel:+5585985646542" target="_blank" class="mb-3">
-        <img src="./img/Footer/whatsapp.png" alt="Entrar em contato via WhatsApp" class="img-fluid pe-4" style="max-height: 15vh;">
-      </a>
-    </div>
-  </div>
-</div>
+          <a href="tel:+5585985646542" target="_blank" class="mb-3">
+            <img src="./img/Footer/whatsapp.png" alt="Entrar em contato via WhatsApp" class="img-fluid pe-4" style="max-height: 15vh;">
+          </a>
+        </div>
+      </div>
+    </section>
 
 
     <footer class="p-3 bg-primary text-center text-light" style="width: auto;"> © 2024 | Leonardo Batista | Todos os direitos reservados</footer>
@@ -286,5 +290,10 @@
     <!--JS Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <!-- JS Lib Animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
