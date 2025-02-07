@@ -1,6 +1,6 @@
 export function Header() {
     return (
-        <nav className="flex justify-evenly mt-10">
+        <nav className="flex justify-evenly pt-10">
             <div>
                 <code>&lt;LeoBatista/&gt;</code>
             </div>
