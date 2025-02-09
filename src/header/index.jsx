@@ -6,9 +6,17 @@ export function Header() {
             </div>
             <div>
                 <ul className="flex space-x-10 ">
-                    <li>Sobre</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
+                    <li>
+                        <a href="Sobre">Sobre</a>    
+                    </li>
+                    
+                    <li>
+                        <a href="Projetos">Projetos</a>
+                    </li>
+                    
+                    <li>
+                        <a href="Contato">Contato</a>
+                    </li>
                 </ul>
             </div>
         </nav>
