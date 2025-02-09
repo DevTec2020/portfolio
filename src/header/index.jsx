@@ -1,8 +1,12 @@
+import Logo from '../assets/logo.png'
+
 export function Header() {
     return (
         <nav className="flex justify-around pt-10 font-semibold text-lg">
             <div>
-                <code>&lt;LeoBatista/&gt;</code>
+                <code className='text-orange-300 text-3xl'>
+                    &lt;LeoBatista/&gt;
+                </code>
             </div>
             <div>
                 <ul className="flex space-x-10 ">
