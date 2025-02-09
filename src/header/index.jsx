@@ -1,11 +1,11 @@
 export function Header() {
     return (
-        <nav className="flex justify-evenly pt-10">
+        <nav className="flex justify-around pt-10 font-semibold text-lg">
             <div>
                 <code>&lt;LeoBatista/&gt;</code>
             </div>
             <div>
-                <ul className="flex gap-5">
+                <ul className="flex space-x-10 ">
                     <li>Sobre</li>
                     <li>Projetos</li>
                     <li>Contato</li>
