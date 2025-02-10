@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+
 import { Header } from "./header";
-import img from "./assets/imgSection1.jpg";
+import { Sobre } from "./sobre"
+
+import imgSection1 from "./assets/imgSection1.jpg";
 
 
 
@@ -24,7 +27,7 @@ function App() {
     <>
       <section
         className="relative min-h-screen bg-black text-white bg-cover bg-center"
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${imgSection1})` }}
       >
         <Header />
         <div className="absolute inset-y-0 left-56 flex flex-col justify-center space-y-5 text-white">
@@ -50,6 +53,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Sobre/>
     </>
   );
 }
