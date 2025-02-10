@@ -36,14 +36,14 @@ function App() {
             </span>
           </h1>
 
-          <div className="space-x-10 pt-10">
+          <div className="space-x-5 pt-10">
             <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-400 hover:bg-white hover:text-orange-400 rounded font-semibold">
-              Contato
+              Linkedin
             </button>
 
-            <button className="px-10 py-4 transition delay-75 duration-500 hover:bg-white hover:text-orange-400 rounded font-semibold">
+            <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-400 rounded font-semibold">
               <a href="#">
-                Currículo
+                GitHub
               </a>
             </button>
 
