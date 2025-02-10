@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { Header } from "./header";
 import { Sobre } from "./sobre"
+import { Projetos } from "./projetos"
 
 import imgSection1 from "./assets/imgSection1.jpg";
 
@@ -54,6 +55,7 @@ function App() {
         </div>
       </section>
       <Sobre/>
+      <Projetos/>
     </>
   );
 }
