@@ -11,7 +11,7 @@ import Despesas from "../assets/Projetos/Reembolso.jpg"
 
 export function Projetos() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen w-full bg-[#C4A484] px-8 py-5  overflow-hidden">
+        <section id="Projetos" className="flex flex-col items-center justify-center min-h-screen w-full bg-[#C4A484] px-8 py-5  overflow-hidden">
             <div className="text-4xl font-semibold text-white mb-10">
                 Projetos
             </div>

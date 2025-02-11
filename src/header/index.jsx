@@ -11,15 +11,15 @@ export function Header() {
             <div>
                 <ul className="flex space-x-10">
                     <li className='transition delay-75 duration-500 hover:text-orange-300'>
-                        <a href="Sobre">Sobre</a>    
+                        <a href="#Sobre">Sobre</a>    
                     </li>
                     
                     <li className='transition delay-75 duration-500 hover:text-orange-300'>
-                        <a href="Projetos">Projetos</a>
+                        <a href="#Projetos">Projetos</a>
                     </li>
                     
                     <li className='transition delay-75 duration-500 hover:text-orange-300'>
-                        <a href="Contato">Contato</a>
+                        <a href="#Contato">Contato</a>
                     </li>
                 </ul>
             </div>

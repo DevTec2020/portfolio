@@ -54,8 +54,8 @@ function App() {
           </div>
         </div>
       </section>
-      <Sobre/>
-      <Projetos/>
+      <Sobre id="Sobre"/>
+      <Projetos id="Projetos"/>
     </>
   );
 }

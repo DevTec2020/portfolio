@@ -5,7 +5,7 @@ import curriculo from "../../public/Leonardo_Batista_Currículo.docx.pdf"
 
 export function Sobre() {
   return (
-    <section className="flex items-center justify-center min-h-screen bg-white px-8">
+    <section id="Sobre" className="flex items-center justify-center min-h-screen bg-white px-8">
         <div className="grid grid-cols-2 max-w-6xl gap-8 items-center">
             {/* Texto */}
             <div>
