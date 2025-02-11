@@ -6,7 +6,7 @@ import FormNasa from "../assets/Projetos/FormNasa.jpg"
 import FormFusion from "../assets/Projetos/FormFusion.jpg"
 import GaleriaDev from "../assets/Projetos/GaleriaDev.jpg"
 import Supermarket from "../assets/Projetos/Supermarket.jpg"
-import teste from "../assets/Projetos/Supermarket.jpg"
+import Despesas from "../assets/Projetos/Reembolso.jpg"
 
 
 export function Projetos() {
@@ -72,9 +72,16 @@ export function Projetos() {
                     image: Supermarket,
                     title: "Supermarket",
                     stacks: ["HTML", "JavaScript", "CSS"],
-                    description: "lista de compras para supermercado",
+                    description: "Aplicação web simples e eficiente para gerenciar as compras de supermercado da semana.",
                     appUrl: "https://devtec2020.github.io/Lista-de-Compras/",
                     codeUrl: "https://github.com/DevTec2020/Lista-de-Compras"                    
+                }, {
+                    image: Despesas,
+                    title: "Refund",
+                    stacks: ["HTML", "JavaScript", "CSS"],
+                    description: "Facilita o processo dos usuários registrem suas despesas para análise e reembolso.",
+                    appUrl: "https://devtec2020.github.io/exercicio-reembolso/",
+                    codeUrl: "https://github.com/DevTec2020/exercicio-reembolso"                    
                 }].map((projeto, index) => (
                     <div key={index} className="max-w-xs bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                         <img className="rounded-t-lg h-52 object-cover" src={projeto.image} alt={`Projeto ${projeto.title}`} />
