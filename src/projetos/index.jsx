@@ -17,7 +17,7 @@ export function Projetos() {
 
             <div className="grid grid-cols-3 mt-20 gap-10">
                 {/* SiteNote Card*/}
-                <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow ">
+                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
                     <img className="rounded-t-lg" src={SiteNote} alt="Projeto SiteNote" />
 
                     <div className="p-5">
@@ -40,7 +40,7 @@ export function Projetos() {
                 </div>
 
                 {/* PetValley Card*/}
-                <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow ">
+                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
                     <img className="rounded-t-lg" src={PetValley} alt="Projeto SiteNote" />
 
                     <div className="p-5">
@@ -63,7 +63,7 @@ export function Projetos() {
 
 
                 {/* DevBurguer Card*/}
-                <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow ">
+                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
                     <img className="rounded-t-lg" src={DevBurguer} alt="Projeto SiteNote" />
 
                     <div className="p-5">
@@ -86,7 +86,7 @@ export function Projetos() {
 
 
                 {/* CadMetas Card*/}
-                <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow ">
+                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
                     <img className="rounded-t-lg" src={CadMetas} alt="Projeto SiteNote" />
 
                     <div className="p-5">
@@ -109,7 +109,7 @@ export function Projetos() {
 
 
                 {/* FormNasa Card*/}
-                <div className="max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow ">
+                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
                     <img className="rounded-t-lg" src={FormNasa} alt="Projeto SiteNote" />
 
                     <div className="p-5">
