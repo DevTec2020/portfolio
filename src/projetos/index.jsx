@@ -5,13 +5,14 @@ import CadMetas from "../assets/Projetos/CadMetas.jpg"
 import FormNasa from "../assets/Projetos/FormNasa.jpg"
 import FormFusion from "../assets/Projetos/FormFusion.jpg"
 import GaleriaDev from "../assets/Projetos/GaleriaDev.jpg"
-
+import Supermarket from "../assets/Projetos/Supermarket.jpg"
+import teste from "../assets/Projetos/Supermarket.jpg"
 
 
 export function Projetos() {
     return (
         <section className="flex flex-col items-center justify-center min-h-screen w-full bg-[#C4A484] px-8 py-5  overflow-hidden">
-            <div className="text-4xl font-semibold text-white">
+            <div className="text-4xl font-semibold text-white mb-10">
                 Projetos
             </div>
 
@@ -67,23 +68,38 @@ export function Projetos() {
                     description: "Galeria dinâmica que busca imagens via API, permitindo salvar favoritas com persistência em localStorage.",
                     appUrl: "https://galeriadev.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/GaleriaDev"                    
+                }, {
+                    image: Supermarket,
+                    title: "Supermarket",
+                    stacks: ["HTML", "JavaScript", "CSS"],
+                    description: "lista de compras para supermercado",
+                    appUrl: "https://devtec2020.github.io/Lista-de-Compras/",
+                    codeUrl: "https://github.com/DevTec2020/Lista-de-Compras"                    
                 }].map((projeto, index) => (
-                    <div key={index} className="max-w-xs bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900/50 transition-shadow duration-300">
-                        <img className="rounded-t-lg" src={projeto.image} alt={`Projeto ${projeto.title}`} />
+                    <div key={index} className="max-w-xs bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                        <img className="rounded-t-lg h-52 object-cover" src={projeto.image} alt={`Projeto ${projeto.title}`} />
 
                         <div className="p-5">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{projeto.title}</h5>
-                            <div className="mb-4">
+                            <div className="mb-4 flex flex-wrap">
                                 {projeto.stacks.map((stack, idx) => (
-                                    <span key={idx} className="bg-gray-700 text-gray-400 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-gray-500">{stack}</span>
+                                    <span key={idx} className="bg-gray-700 text-gray-400 text-xs font-medium me-2 px-2 py-1 rounded border border-gray-500">{stack}</span>
                                 ))}
                             </div>
                             
                             <p className="h-24 mb-3 font-normal text-gray-400">{projeto.description}</p>
                                 
                             <div className="flex gap-2">
-                                {projeto.appUrl && <a href={projeto.appUrl} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none  bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">APP</a>}
-                                <a href={projeto.codeUrl} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none  bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">CODE</a>
+                                {projeto.appUrl && 
+                                    <a href={projeto.appUrl} target="_blank" 
+                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">
+                                            APP
+                                    </a>
+                                }
+                                    <a href={projeto.codeUrl} target="_blank" 
+                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">
+                                            CODE
+                                    </a>
                             </div>
 
                         </div>
