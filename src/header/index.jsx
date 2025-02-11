@@ -1,5 +1,3 @@
-
-
 export function Header() {
     return (
         <nav className="flex justify-around pt-10 font-semibold text-lg">
