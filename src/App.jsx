@@ -42,7 +42,7 @@ function App() {
 
           <div className="space-x-5 pt-10">
             <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-400 hover:bg-white hover:text-orange-400 rounded font-semibold">
-              Linkedin
+              Linkedin 
             </button>
 
             <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-400 rounded font-semibold">
