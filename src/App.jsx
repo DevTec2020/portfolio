@@ -41,21 +41,24 @@ function App() {
           </h1>
 
           <div className="space-x-5 pt-10">
-            <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-400 hover:bg-white hover:text-orange-400 rounded font-semibold">
-              Linkedin
-            </button>
+            <a href="https://www.linkedin.com/in/DevTec-LeoBatista/" target="_blank">
+              <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-400 hover:bg-white hover:text-orange-400 rounded font-semibold">
+                Linkedin
+              </button>
+            </a>  
 
-            <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-400 rounded font-semibold">
-              <a href="#">
+            <a href="https://github.com/DevTec2020" target="_blank">
+              <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-400 rounded font-semibold">
                 GitHub
-              </a>
-            </button>
+              </button>
+            </a>
+              
 
           </div>
         </div>
       </section>
-      <Sobre id="Sobre"/>
-      <Projetos id="Projetos"/>
+      <Sobre/>
+      <Projetos/>
     </>
   );
 }
