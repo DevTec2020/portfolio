@@ -5,6 +5,8 @@ import { Sobre } from "./sobre"
 import { Projetos } from "./projetos"
 
 import imgSection1 from "./assets/imgSection1.jpg";
+import imgSection4 from "./assets/Profile.jpg";
+
 
 
 
@@ -27,7 +29,7 @@ function App() {
   return (
     <>
       <section
-        className="relative min-h-screen bg-black text-white bg-cover bg-center"
+        className="relative min-h-screen text-white bg-cover bg-center"
         style={{ backgroundImage: `url(${imgSection1})` }}
       >
         <Header />
@@ -57,8 +59,60 @@ function App() {
           </div>
         </div>
       </section>
+      
       <Sobre/>
+      
       <Projetos/>
+
+      <section id="Contato" className="flex items-center justify-center min-h-screen bg-white px-8">
+        <div className="grid grid-cols-2 max-w-6xl gap-8 items-center">
+
+            {/* Imagem */}
+            <div className="flex justify-end">
+                <img
+                    src={imgSection4}
+                    alt="Designer working on laptop"
+                    className="rounded-lg shadow-lg max-w-full"
+                />
+            </div>
+
+            {/* Texto */}
+            <div>
+                <h1 className="text-4xl font-semibold text-orange-400">
+                    Contato
+                </h1>
+
+                <button className="mt-10 px-6 py-3 bg-[#C4A484] text-white font-semibold rounded-lg shadow-md hover:bg-[#a88d6b] transition">
+                    <a href="" target="_blank">
+                        W
+                    </a>
+                </button>
+                
+                <button className="mt-10 px-6 py-3 bg-[#C4A484] text-white font-semibold rounded-lg shadow-md hover:bg-[#a88d6b] transition">
+                    <a href="" target="_blank">
+                        Li
+                    </a>
+                </button>
+
+                
+                <button className="mt-10 px-6 py-3 bg-[#C4A484] text-white font-semibold rounded-lg shadow-md hover:bg-[#a88d6b] transition">
+                    <a href="" target="_blank">
+                        git
+                    </a>
+                </button>
+
+                
+                <button className="mt-10 px-6 py-3 bg-[#C4A484] text-white font-semibold rounded-lg shadow-md hover:bg-[#a88d6b] transition">
+                    <a href="" target="_blank">
+                        W
+                    </a>
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
     </>
   );
 }
