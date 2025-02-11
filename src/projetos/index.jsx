@@ -1,135 +1,94 @@
-import {ProjetosStack} from "./ProjetosStack.jsx"
-import {ProjetosUrl} from "./ProjetosUrl.jsx"
-import {ProjetosDesc} from "./ProjetosDesc.jsx"
-
 import SiteNote from "../assets/Projetos/SiteNote.jpg"
 import PetValley from "../assets/Projetos/PetValley.jpg"
 import DevBurguer from "../assets/Projetos/DevBurguer.jpg"
 import CadMetas from "../assets/Projetos/CadMetas.jpg"
 import FormNasa from "../assets/Projetos/FormNasa.jpg"
+import FormFusion from "../assets/Projetos/FormFusion.jpg"
+import GaleriaDev from "../assets/Projetos/GaleriaDev.jpg"
+
+
 
 export function Projetos() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen bg-[#C4A484] px-8 py-5">
+        <section className="flex flex-col items-center justify-center min-h-screen w-full bg-[#C4A484] px-8 py-5  overflow-hidden">
             <div className="text-4xl font-semibold text-white">
                 Projetos
             </div>
 
-            <div className="grid grid-cols-3 mt-20 gap-10">
-                {/* SiteNote Card*/}
-                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
-                    <img className="rounded-t-lg" src={SiteNote} alt="Projeto SiteNote" />
+            <div className="flex flex-wrap justify-center mt-10 gap-8">
+                {/* Templates de dados para projetos */}
 
-                    <div className="p-5">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">SiteNote</h5>
-                        <div className="mb-4">
-                            <ProjetosStack stack="HTML" />
-                            <ProjetosStack stack="CSS" />
-                            <ProjetosStack stack="Javascript" />
+                {[{
+                    image: SiteNote,
+                    title: "SiteNote",
+                    stacks: ["HTML", "CSS", "Javascript"],
+                    description: "Aplicação web projetada para ajudar a criar, editar, deletar notas e listas de tarefas de forma eficiente e intuitiva.",
+                    appUrl: "https://devtec2020.github.io/SiteNotes/",
+                    codeUrl: "https://github.com/DevTec2020/SiteNotes"                    
+                },{
+                    image: PetValley,
+                    title: "PetValley",
+                    stacks: ["HTML", "CSS", "Bulma"],
+                    description: "Site para clínica veterinária, com foco em usabilidade e design responsivo.",
+                    appUrl: "https://pet-valley.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/Pet-Valley"
+                }, {
+                    image: DevBurguer,
+                    title: "DevBurguer",
+                    stacks: ["HTML", "Tailwind", "JavaScript"],
+                    description: "Cardápio Online com envio de pedidos diretamente para o WhatsApp.",
+                    appUrl: "https://dev-burguer-jade.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/DevBurguer"
+                }, {
+                    image: CadMetas,
+                    title: "CadMetas",
+                    stacks: ["JavaScript", "NodeJs", "Json"],
+                    description: "Gerencia metas via linha de comando, permitindo cadastro, marcação, visualização, exclusão e persistência em JSON.",
+                    appUrl: null,
+                    codeUrl: "https://github.com/DevTec2020/CadMetas"
+                }, {
+                    image: FormNasa,
+                    title: "FormNasa",
+                    stacks: ["HTML", "SASS", "Bootstrap"],
+                    description: "Formulário minimalista, onde estudei Bootstrap, focado na simplicidade e eficiência.",
+                    appUrl: "https://devtec2020.github.io/FormNasa/",
+                    codeUrl: "https://github.com/DevTec2020/FormNasa"
+                }, {
+                    image: FormFusion,
+                    title: "FormFusion",
+                    stacks: ["React", "Tailwind", "TypeScript", "Zod"],
+                    description: "Formulário para cadastro de membros da comunidade com persistência em localstorage.",
+                    appUrl: "https://formulario-dev-fusion.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/FormularioDevFusion"
+                }, {
+                    image: GaleriaDev,
+                    title: "GaleriaDev",
+                    stacks: ["React", "Tailwind", "TypeScript"],
+                    description: "Galeria dinâmica que busca imagens via API, permitindo salvar favoritas com persistência em localStorage.",
+                    appUrl: "https://galeriadev.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/GaleriaDev"                    
+                }].map((projeto, index) => (
+                    <div key={index} className="max-w-xs bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900/50 transition-shadow duration-300">
+                        <img className="rounded-t-lg" src={projeto.image} alt={`Projeto ${projeto.title}`} />
+
+                        <div className="p-5">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{projeto.title}</h5>
+                            <div className="mb-4">
+                                {projeto.stacks.map((stack, idx) => (
+                                    <span key={idx} className="bg-gray-700 text-gray-400 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-gray-500">{stack}</span>
+                                ))}
+                            </div>
+                            
+                            <p className="h-24 mb-3 font-normal text-gray-400">{projeto.description}</p>
+                                
+                            <div className="flex gap-2">
+                                {projeto.appUrl && <a href={projeto.appUrl} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none  bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">APP</a>}
+                                <a href={projeto.codeUrl} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none  bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">CODE</a>
+                            </div>
+
                         </div>
-
-                        <ProjetosDesc txt="Aplicação web projetada para ajudar a criar, editar, deletar notas e listas de tarefas de forma eficiente e intuitiva."/>
-
- 
-                        <div className="flex  gap-2">
-                            <ProjetosUrl url="https://devtec2020.github.io/SiteNotes/" txt="APP"/>
-                            <ProjetosUrl url="https://github.com/DevTec2020/SiteNotes" txt="CODE"/>
-                        </div>
-
-                    </div>
-                </div>
-
-                {/* PetValley Card*/}
-                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
-                    <img className="rounded-t-lg" src={PetValley} alt="Projeto SiteNote" />
-
-                    <div className="p-5">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">PetValley</h5>
-                        <div className="mb-4">
-                            <ProjetosStack stack="HTML" />
-                            <ProjetosStack stack="CSS" />
-                            <ProjetosStack stack="Bulma" />
-                        </div>
-
-                        <ProjetosDesc txt="Site para clínica veterinária, com foco em usabilidade e design responsivo."/>
- 
-                        <div className="flex  gap-2">
-                            <ProjetosUrl url="https://pet-valley.vercel.app" txt="APP"/>
-                            <ProjetosUrl url="https://github.com/DevTec2020/Pet-Valley" txt="CODE"/>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                {/* DevBurguer Card*/}
-                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
-                    <img className="rounded-t-lg" src={DevBurguer} alt="Projeto SiteNote" />
-
-                    <div className="p-5">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">DevBurguer</h5>
-                        <div className="mb-4">
-                            <ProjetosStack stack="HTML" />
-                            <ProjetosStack stack="Tailwind" />
-                            <ProjetosStack stack="JavaScript" />
-                        </div>
-
-                        <ProjetosDesc txt="Cardápio Online de hamburgueria, com uma interface moderna e funcional. Permitindo que os pedidos sejam encaminhados diretamente para o WhatsApp."/>
- 
-                        <div className="flex  gap-2">
-                            <ProjetosUrl url="https://dev-burguer-jade.vercel.app" txt="APP"/>
-                            <ProjetosUrl url="https://github.com/DevTec2020/DevBurguer" txt="CODE"/>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                {/* CadMetas Card*/}
-                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
-                    <img className="rounded-t-lg" src={CadMetas} alt="Projeto SiteNote" />
-
-                    <div className="p-5">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">CadMetas</h5>
-                        <div className="mb-4">
-                            <ProjetosStack stack="JavaScript" />
-                            <ProjetosStack stack="NodeJs" />
-                            <ProjetosStack stack="Json" />
-                        </div>
-
-                        <ProjetosDesc txt="Gerencia metas por linha de comando. Podendo fazer cadastro, marcação, visualização, exclusão e também a persistência dos dados via arquivo JSON."/>
- 
-                        <div className="flex  gap-2">
-                            <ProjetosUrl url="https://github.com/DevTec2020/CadMetas" txt="CODE"/>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                {/* FormNasa Card*/}
-                <div className="max-w-sm bg-gray-800 rounded-lg hover:shadow-2xl hover:shadow-gray-900 transition-shadow duration-300">
-                    <img className="rounded-t-lg" src={FormNasa} alt="Projeto SiteNote" />
-
-                    <div className="p-5">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">FormNasa</h5>
-                        <div className="mb-4">
-                            <ProjetosStack stack="HTML" />
-                            <ProjetosStack stack="SASS" />
-                            <ProjetosStack stack="Bootstrap" />
-                        </div>
-
-                        <ProjetosDesc txt="Formulário minimalista, estilizado com o Bootstrap, focado na simplicidade e eficiência."/>
- 
-                        <div className="flex  gap-2">
-                            <ProjetosUrl url="https://devtec2020.github.io/FormNasa/" txt="APP"/>
-                            <ProjetosUrl url="https://github.com/DevTec2020/FormNasa" txt="CODE"/>
-                        </div>
-
-                    </div>
-                </div>
-
+                    </div>                    
+                ))}
 
             </div>
         </section>
