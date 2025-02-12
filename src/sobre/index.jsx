@@ -47,6 +47,7 @@ export function Sobre() {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="h-10" alt="express logo"  />
                     <img src="https://cdn.simpleicons.org/zod/3178C6" className="h-10" alt="zod logo" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-10" alt="docker logo" />
                 </p>
                 <button className="mt-10 px-6 py-3 bg-[#C4A484] text-white font-semibold rounded-lg shadow-md hover:bg-[#a88d6b] transition">
                     <a href={curriculo} target="_blank">
