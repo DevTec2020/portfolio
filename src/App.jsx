@@ -30,9 +30,9 @@ function App() {
         style={{ backgroundImage: `url(${imgSection1})` }}
       >
         <Header />
-        <div className="absolute inset-y-0 left-56 flex flex-col justify-center space-y-5 text-white">
-          <h2 className="text-4xl font-light">Olá 👋! sou Leonardo Batista</h2>
-          <h1 className="text-6xl font-semibold">
+        <div className="sm:left-32 absolute inset-y-0 left-5 flex flex-col justify-center space-y-5 text-white">
+          <h2 className="sm:text-4xl text-2xl font-light">Olá 👋! sou Leonardo Batista</h2>
+          <h1 className="sm:text-5xl text-3xl font-semibold">
             Desenvolvedor 
             <span className="ms-4 text-orange-400">
               {cargoDev}
