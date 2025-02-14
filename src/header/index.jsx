@@ -4,60 +4,66 @@ export function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <>
-        {/* Nav para telas maiores */}
-        <nav className="hidden sm:flex justify-around pt-10 font-semibold text-lg">
-            <div>
-                <code className='text-orange-300 text-3xl transition delay-75 duration-500 hover:text-white'>
-                    &lt;LeoBatista/&gt;
-                </code>
-            </div>
-            <div>
-                <ul className="flex space-x-10">
-                    <li className='transition delay-75 duration-500 hover:text-orange-300'>
-                        <a href="#Sobre">Sobre</a>    
-                    </li>
-                    
-                    <li className='transition delay-75 duration-500 hover:text-orange-300'>
-                        <a href="#Projetos">Projetos</a>
-                    </li>
-                    
-                    <li className='transition delay-75 duration-500 hover:text-orange-300'>
-                        <a href="#Contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        {/* Nav para telas menores */}
-        <div className="sm:hidden">
-            <button className="fixed top-4 left-4 p-2 text-white bg-[#C4A484] rounded" onClick={() => setIsOpen(!isOpen)}>
-                <div className="flex flex-col gap-1">
-                    <span className="block w-6 h-1 bg-white"></span>
-                    <span className="block w-6 h-1 bg-white"></span>
-                    <span className="block w-6 h-1 bg-white"></span>
+        <header >
+            {/* Menu para telas maiores */}
+            <nav className="hidden sm:flex justify-around pt-10 font-semibold text-lg">
+                <div>
+                    <code className='text-orange-300 text-3xl transition delay-75 duration-500 hover:text-white'>
+                        &lt;LeoBatista/&gt;
+                    </code>
                 </div>
-            </button>
-
-            {isOpen &&(
-                <nav className="fixed top-0 left-0 h-60 w-40 bg-[#C4A484] rounded text-white shadow-lg z-40">
-                    <button className="fixed top-2 left-32 font-bold" onClick={() => setIsOpen(false)}>X</button>
-                    <ul className="text-center font-semibold mt-10 space-y-5">
+                <div>
+                    <ul className="flex space-x-10">
                         <li className='transition delay-75 duration-500 hover:text-orange-300'>
                             <a href="#Sobre">Sobre</a>    
                         </li>
-                        
                         <li className='transition delay-75 duration-500 hover:text-orange-300'>
                             <a href="#Projetos">Projetos</a>
                         </li>
-                        
                         <li className='transition delay-75 duration-500 hover:text-orange-300'>
                             <a href="#Contato">Contato</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+            </nav>
+
+            {/* Menu para telas menores */}
+            <div className="sm:hidden flex justify-between font-semibold items-center p-4 relative">
+                <a href="#" className="text-orange-300 text-3xl">&lt;LeoBatista/&gt;</a>
+
+                {/* Botão do menu */}
+                <button 
+                    className="p-2 bg-[#C4A484] rounded focus:outline-none z-50"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <div className="flex flex-col gap-1">
+                        <span className="block w-6 h-1 bg-white"></span>
+                        <span className="block w-6 h-1 bg-white"></span>
+                        <span className="block w-6 h-1 bg-white"></span>
+                    </div>
+                </button>
+            </div>
+
+            {/* Overlay para fechar o menu ao clicar fora */}
+            {isOpen && (
+                <div 
+                    className="fixed inset-0 bg-black/50 z-40"
+                    onClick={() => setIsOpen(false)}
+                ></div>
             )}
-        </div>
-        </>
-    )
+
+            {/* Menu lateral mobile */}
+            <nav className={`fixed top-0 right-0 h-full w-2/3 bg-[#C4A484] text-white flex flex-col items-center pt-16 space-y-6 z-50 shadow-lg transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <button 
+                    className="absolute top-4 right-4 text-2xl font-bold"
+                    onClick={() => setIsOpen(false)}
+                >
+                    ✖
+                </button>
+                <a href="#Sobre" onClick={() => setIsOpen(false)}>Sobre</a>
+                <a href="#Projetos" onClick={() => setIsOpen(false)}>Projetos</a>
+                <a href="#Contato" onClick={() => setIsOpen(false)}>Contato</a>
+            </nav>
+        </header>
+    );
 }
