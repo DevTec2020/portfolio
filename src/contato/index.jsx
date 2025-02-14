@@ -9,7 +9,7 @@ import imgSection4 from "../assets/Profile.jpg";
 export function Contato(){
     return (
       <section id="Contato" className="flex items-center justify-center min-h-screen bg-white px-10">
-        <div className="grid grid-cols-2 max-w-6xl gap-8 items-center">
+        <div className="grid sm:grid-cols-2 max-w-6xl gap-8 items-center">
 
             {/* Imagem */}
             <div className="flex justify-end">
