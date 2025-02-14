@@ -6,7 +6,7 @@ import curriculo from "../../public/Leonardo_Batista_Currículo.docx.pdf"
 export function Sobre() {
   return (
     <section id="Sobre" className="flex items-center justify-center min-h-screen bg-white px-8">
-        <div className="grid grid-cols-2 max-w-6xl gap-8 items-center">
+        <div className="sm:grid grid-cols-2 max-w-6xl gap-8 items-center">
             {/* Texto */}
             <div>
                 <h1 className="text-4xl font-semibold text-orange-400">
@@ -57,7 +57,7 @@ export function Sobre() {
             </div>
 
             {/* Imagem */}
-            <div className="flex justify-end">
+            <div className="hidden sm:flex justify-end">
                 <img
                     src={imgSection2}
                     alt="Designer working on laptop"
