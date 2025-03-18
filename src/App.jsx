@@ -5,7 +5,7 @@ import { Sobre } from "./sobre"
 import { Projetos } from "./projetos"
 import { Contato } from "./contato"
 
-import imgSection1 from "./assets/imgSection1.jpg";
+import imgSection1 from "./assets/imgSection1.avif";
 
 function App() {
   const [cargoDev, setCargoDev] = useState("")
@@ -25,29 +25,32 @@ function App() {
 
   return (
     <>
-      <section
-        className="relative min-h-screen text-white bg-cover bg-center"
-        style={{ backgroundImage: `url(${imgSection1})` }}
-      >
+      <section className="relative min-h-screen text-white ">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${imgSection1})` }}
+        />
+
         <Header />
+
         <div className="sm:left-32 absolute inset-y-0 left-5 flex flex-col justify-center space-y-5 text-white">
-          <h2 className="sm:text-4xl text-2xl font-light">Olá 👋! sou Leonardo Batista</h2>
+          <h2 className="sm:text-4xl text-2xl font-light ">Olá 👋! sou Leonardo Batista</h2>
           <h1 className="sm:text-5xl text-3xl font-semibold">
             Desenvolvedor 
-            <span className="ms-4 text-orange-400">
+            <span className="ms-4 text-orange-500">
               {cargoDev}
             </span>
           </h1>
 
           <div className="space-x-5 pt-10">
             <a href="https://www.linkedin.com/in/DevTec-LeoBatista/" target="_blank">
-              <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-400 hover:bg-white hover:text-orange-400 rounded font-semibold">
+              <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-500 hover:bg-white hover:text-orange-500 rounded font-semibold">
                 Linkedin
               </button>
             </a>  
 
             <a href="https://github.com/DevTec2020" target="_blank">
-              <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-400 rounded font-semibold">
+              <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-500 rounded font-semibold">
                 GitHub
               </button>
             </a>
