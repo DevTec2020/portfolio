@@ -13,12 +13,12 @@ import Todolist from "../assets/Projetos/To-do-list.jpg"
 
 export function Projetos() {
     return (
-        <section id="Projetos" className="flex flex-col items-center justify-center min-h-screen w-full bg-[#C4A484] px-8 py-5  overflow-hidden">
-            <div className="text-4xl font-semibold text-white mb-10">
+        <section id="Projetos" className="flex flex-col items-center justify-center min-h-screen w-full bg-black/30 px-8 py-5  overflow-hidden">
+            <div className="text-5xl font-bold text-white mb-10">
                 Projetos
             </div>
 
-            <div className="flex flex-wrap justify-center mt-10 gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
                 {/* Templates de dados para projetos */}
 
                 {[{
