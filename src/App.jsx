@@ -44,13 +44,13 @@ function App() {
 
           <div className="space-x-5 pt-10">
             <a href="https://www.linkedin.com/in/DevTec-LeoBatista/" target="_blank">
-              <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-500 hover:bg-white hover:text-orange-500 rounded font-semibold">
+              <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-500 hover:bg-white hover:text-orange-500 rounded-lg font-bold border-2 border-orange-500">
                 Linkedin
               </button>
             </a>  
 
             <a href="https://github.com/DevTec2020" target="_blank">
-              <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-500 rounded font-semibold">
+              <button className="px-10 py-4 transition delay-75 duration-500  hover:bg-white hover:text-orange-500 rounded-lg font-bold text-orange-500 border-2 border-orange-500">
                 GitHub
               </button>
             </a>
