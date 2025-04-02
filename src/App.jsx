@@ -1,13 +1,11 @@
-import { Header } from "./header";
+import { Header } from "./sections/Header";
 import { Capa } from "./sections/Capa";
-import { Sobre } from "./sobre"
-import { Projetos } from "./projetos"
-import { Contato } from "./contato"
+import { Sobre } from "./sections/Sobre"
+import { Projetos } from "./sections/Projetos"
+import { Contato } from "./sections/Contato"
 
 
 function App() {
-
-
   return (
     <>
       <section className="relative h-screen  text-black">
