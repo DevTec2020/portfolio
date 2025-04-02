@@ -6,7 +6,7 @@ export function Header() {
     return (
         <header >
             {/* Menu para telas maiores */}
-            <nav className="hidden sm:flex justify-around pt-10 font-semibold text-lg relative z-10">
+            <nav className="hidden sm:flex justify-around items-center py-10 font-semibold text-lg z-10  top-0 w-full ">
                 <div>
                     <code className='text-orange-500 text-3xl transition delay-75 duration-500 hover:text-white'>
                         &lt;LeoBatista/&gt;
@@ -29,7 +29,7 @@ export function Header() {
             </nav>
 
             {/* Menu para telas menores */}
-            <div className="sm:hidden flex justify-between font-semibold items-center p-4 relative z-10">
+            <div className="sm:hidden flex justify-between font-semibold items-center p-4 z-10 top-0 w-full ">
                 <a href="#" className="text-orange-500 text-3xl">&lt;LeoBatista/&gt;</a>
 
                 {/* Botão do menu */}
