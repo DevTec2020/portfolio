@@ -8,7 +8,7 @@ export function Header() {
             {/* Menu para telas maiores */}
             <nav className="hidden sm:flex justify-around items-center py-10 font-semibold text-lg z-10  top-0 w-full border-b-2 border-orange-500 ">
                 <div>
-                    <code className='text-orange-500 text-3xl transition delay-75 duration-500 hover:text-white'>
+                    <code className='text-orange-500 text-3xl'>
                         &lt;LeoBatista/&gt;
                     </code>
                 </div>
