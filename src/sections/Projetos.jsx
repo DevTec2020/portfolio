@@ -13,8 +13,8 @@ import Todolist from "../assets/Projetos/To-do-list.jpg"
 
 export function Projetos() {
     return (
-        <section id="Projetos" className="flex flex-col items-center justify-center min-h-screen w-full bg-black/30 px-8 py-5  overflow-hidden">
-            <div className="text-5xl font-bold text-white mb-10">
+        <section id="Projetos" className="flex flex-col items-center justify-center min-h-screen w-full bg-orange-400/80 px-8 py-5  overflow-hidden">
+            <div className="text-4xl font-bold text-white mb-10">
                 Projetos
             </div>
 
