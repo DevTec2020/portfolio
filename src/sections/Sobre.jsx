@@ -49,11 +49,11 @@ export function Sobre() {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-10" alt="docker logo" />
                 </p>
-                <button className="mt-10 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg shadow-md hover:bg-orange-500 transition">
-                    <a href={curriculo} target="_blank">
+                <a href="https://docs.google.com/document/d/1RC1nj4_KHZKpE8c9zlwvZ9dIJplbxS71/export?format=pdf" target="_blank">
+                    <button className="mt-10 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg shadow-md hover:bg-orange-500 transition">
                         Download CV
-                    </a>
-                </button>
+                    </button>
+                </a>
             </div>
 
             {/* Imagem */}
