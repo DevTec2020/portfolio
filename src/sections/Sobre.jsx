@@ -1,6 +1,6 @@
 import imgSection2 from "../assets/imgSection2.jpg";
 import firebird from "../assets/firebird.png";
-import curriculo from "../../public/Leonardo_Batista_Currículo.docx.pdf"
+
 
 
 export function Sobre() {
@@ -33,15 +33,16 @@ export function Sobre() {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="h-10" alt="typescript logo"  />
                     <img src="https://skillicons.dev/icons?i=bootstrap" className="h-10" alt="bootstrap logo"  />
                     <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" className="h-10" alt="tailwindcss logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg" className="h-10" alt="bulma logo" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" className="h-10" alt="sass logo"  />
                     <img src="https://cdn.simpleicons.org/babel/F9DC3E" className="h-10" alt="babel logo"  />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" className="h-10" alt="webpack logo"  />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="h-10" alt="git logo"  />
                     <img src="https://skillicons.dev/icons?i=github" className="h-10" alt="github logo"  />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" className="h-10" alt="npm logo"  />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" className="h-10" alt="postgresql logo"  />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" className="h-10" alt="microsoftsqlserver logo"  />
                     <img src={firebird} className="h-10" alt="firebird logo" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="h-10" alt="firebase logo" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="h-10" alt="nodejs logo"  />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="h-10" alt="react logo"  />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="h-10" alt="express logo"  />
@@ -49,6 +50,7 @@ export function Sobre() {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-10" alt="docker logo" />
                 </p>
+
                 <a href="https://docs.google.com/document/d/1RC1nj4_KHZKpE8c9zlwvZ9dIJplbxS71/export?format=pdf" target="_blank">
                     <button className="mt-10 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg shadow-md hover:bg-orange-500 transition">
                         Download CV
