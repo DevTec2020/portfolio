@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
 
+import gdr from "../assets/empresas/gdr.png"
+import fortes from "../assets/empresas/fortes.png"
+import superar from "../assets/empresas/superar.png"
+import fusion from "../assets/empresas/fusion.png"
+
+
 export function Capa(){
     const [cargoDev, setCargoDev] = useState("")
 
@@ -41,13 +47,14 @@ export function Capa(){
             </div>
 
             {/* Empresas */}
-            <div className="mt-10 flex flex-col items-center text-center">
+            <div className="mt-4 flex flex-col items-center text-center">
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-400">Empresas para as quais desenvolvi projetos</h3>
-                <div className="mt-5 flex flex-wrap justify-center gap-8">
-                {/* Aqui você pode adicionar imagens ou logos das empresas */}
-                <img src="/logo1.png" alt="Empresa 1" className="h-12" />
-                <img src="/logo2.png" alt="Empresa 2" className="h-12" />
-                <img src="/logo3.png" alt="Empresa 3" className="h-12" />
+                <div className="mt-5 flex flex-wrap justify-center items-center gap-16">
+                    <img src={gdr} alt="logo Gdr" className="h-24 grayscale" />
+                    <img src={fortes} alt="logo Fortes" className="h-16 grayscale" />
+                    <img src={superar} alt="logo Superar" className="h-32 grayscale" />
+                    <img src={fusion} alt="logo comunidade" className="h-16 grayscale" />
+
                 </div>
             </div>
         </div>
