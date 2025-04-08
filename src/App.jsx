@@ -8,7 +8,7 @@ import { Contato } from "./sections/Contato"
 function App() {
   return (
     <>
-      <section className="relative h-screen  text-black">
+      <section className="relative max-h-screen text-black">
         <Header/>
         <Capa/>
       </section>
