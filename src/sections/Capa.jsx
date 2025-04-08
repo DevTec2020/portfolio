@@ -23,9 +23,9 @@ export function Capa(){
     },[]);
   
     return (
-        <div className="flex flex-col justify-center">
+        <section className="flex flex-col justify-center">
             {/*Apresentação */}
-            <div className="flex flex-col items-start h-full text-left px-5 sm:px-32 py-40 sm:py-40 bg-cover bg-center text-white"
+            <div className="flex flex-col items-start h-full text-left px-5 sm:px-32 py-32 sm:py-40 bg-cover bg-center text-white"
                 style={{ backgroundImage: `url(${Bgcapa})` }}
             >
                 <h2 className="sm:text-4xl text-2xl font-light">Olá 👋! sou Leonardo Batista</h2>
@@ -63,7 +63,7 @@ export function Capa(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
     )
 }
