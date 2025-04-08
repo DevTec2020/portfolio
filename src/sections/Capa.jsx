@@ -55,7 +55,7 @@ export function Capa(){
                     <h3 className="text-xl sm:text-2xl font-semibold text-gray-400 text-center mb-6">
                         Desenvolvi projetos para:
                     </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-items-center gap-7 grayscale border border-red-700">
+                    <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-items-center gap-7 grayscale">
                         <img src={gdr} alt="logo Gdr" className="h-20 md:h-24" />
                         <img src={fortes} alt="logo Fortes" className="h-14 md:h-16" />
                         <img src={superar} alt="logo Superar" className="h-28 md:h-32" />
