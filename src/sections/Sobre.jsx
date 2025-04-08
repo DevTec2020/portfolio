@@ -5,7 +5,7 @@ import firebird from "../assets/firebird.png";
 
 export function Sobre() {
   return (
-    <section id="Sobre" className="flex items-center justify-center min-h-screen bg-white px-8">
+    <section id="Sobre" className="flex items-center justify-center min-h-screen bg-white px-8 py-5">
         <div className="sm:grid grid-cols-2 max-w-6xl gap-8 items-center">
             {/* Texto */}
             <div>
