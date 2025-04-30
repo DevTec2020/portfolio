@@ -106,7 +106,7 @@ export function Projetos() {
                     codeUrl: "https://github.com/DevTec2020/To-do-list"                    
                 }].map((projeto, index) => (
                     // Cards
-                    <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-3 hover:shadow-lg transition-all duration-500 ease-in-out">
                         <div className="relative overflow-hidden h-48">
                             <img src={projeto.image} 
                                 alt={`Projeto ${projeto.title}`}
