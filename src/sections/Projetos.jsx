@@ -1,3 +1,5 @@
+
+
 import SiteNote from "../assets/Projetos/SiteNote.jpg"
 import PetValley from "../assets/Projetos/PetValley.jpg"
 import DevBurguer from "../assets/Projetos/DevBurguer.jpg"
@@ -13,17 +15,19 @@ import Todolist from "../assets/Projetos/To-do-list.jpg"
 
 export function Projetos() {
     return (
-        <section id="Projetos" className="flex flex-col items-center justify-center min-h-screen w-full bg-orange-400/80 px-8 py-5  overflow-hidden">
-            <div className="text-4xl font-bold text-white mb-10">
-                Projetos
+        <section id="projetos" className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-orange-400 mb-4">Meus Projetos</h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">Alguns dos trabalhos que desenvolvi</p>
             </div>
-
-            <div className="flex flex-wrap justify-center gap-8">
-                {/* Templates de dados para projetos */}
-
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/*  Array com os projetos */}
                 {[{
                     image: SiteNote,
                     title: "SiteNote",
+                    tag: "Sistema Web",
                     stacks: ["HTML", "CSS", "Javascript"],
                     description: "Aplicação web projetada para ajudar a criar, editar, deletar notas e listas de tarefas de forma eficiente e intuitiva.",
                     appUrl: "https://devtec2020.github.io/SiteNotes/",
@@ -31,6 +35,7 @@ export function Projetos() {
                 },{
                     image: PetValley,
                     title: "PetValley",
+                    tag: "Landing Page",
                     stacks: ["HTML", "CSS", "Bulma"],
                     description: "Site para clínica veterinária, com foco em usabilidade e design responsivo.",
                     appUrl: "https://pet-valley.vercel.app",
@@ -38,6 +43,7 @@ export function Projetos() {
                 }, {
                     image: DevBurguer,
                     title: "DevBurguer",
+                    tag: "Sistema web",
                     stacks: ["HTML", "Tailwind", "JavaScript"],
                     description: "Cardápio Online com envio de pedidos diretamente para o WhatsApp.",
                     appUrl: "https://dev-burguer-jade.vercel.app",
@@ -45,6 +51,7 @@ export function Projetos() {
                 }, {
                     image: CadMetas,
                     title: "CadMetas",
+                    tag: "Sistema Back-end",
                     stacks: ["JavaScript", "NodeJs", "Json"],
                     description: "Gerencia metas via linha de comando, permitindo cadastro, marcação, visualização, exclusão e persistência em JSON.",
                     appUrl: null,
@@ -52,6 +59,7 @@ export function Projetos() {
                 }, {
                     image: FormNasa,
                     title: "FormNasa",
+                    tag: "Sistema Web",
                     stacks: ["HTML", "SASS", "Bootstrap"],
                     description: "Formulário minimalista, onde estudei Bootstrap, focado na simplicidade e eficiência.",
                     appUrl: "https://devtec2020.github.io/FormNasa/",
@@ -59,6 +67,7 @@ export function Projetos() {
                 }, {
                     image: FormFusion,
                     title: "FormFusion",
+                    tag: "Sistema Web",
                     stacks: ["React", "Tailwind", "TypeScript", "Zod"],
                     description: "Formulário para cadastro de membros da comunidade com persistência em localstorage.",
                     appUrl: "https://formulario-dev-fusion.vercel.app",
@@ -66,6 +75,7 @@ export function Projetos() {
                 }, {
                     image: GaleriaDev,
                     title: "GaleriaDev",
+                    tag: "Sistema Web",
                     stacks: ["React", "Tailwind", "TypeScript"],
                     description: "Galeria dinâmica que busca imagens via API, permitindo salvar favoritas com persistência em localStorage.",
                     appUrl: "https://galeriadev.vercel.app",
@@ -73,6 +83,7 @@ export function Projetos() {
                 }, {
                     image: Supermarket,
                     title: "Supermarket",
+                    tag: "Sistema Web",
                     stacks: ["HTML", "JavaScript", "CSS"],
                     description: "Aplicação web simples e eficiente para gerenciar as compras de supermercado da semana.",
                     appUrl: "https://devtec2020.github.io/Lista-de-Compras/",
@@ -80,6 +91,7 @@ export function Projetos() {
                 }, {
                     image: Despesas,
                     title: "Refund",
+                    tag: "Sistema Web",
                     stacks: ["HTML", "JavaScript", "CSS"],
                     description: "Facilita o processo dos usuários registrem suas despesas para análise e reembolso.",
                     appUrl: "https://devtec2020.github.io/exercicio-reembolso/",
@@ -87,42 +99,50 @@ export function Projetos() {
                 }, {
                     image: Todolist,
                     title: "To-do-list",
+                    tag: "Sistema Web",
                     stacks: ["HTML", "TypeScript", "CSS", "Tailwind"],
                     description: "Lista de terefas com contador para controle das tasks.",
                     appUrl: "https://to-do-list-omega-flame.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/To-do-list"                    
                 }].map((projeto, index) => (
-                    <div key={index} className="max-w-xs bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                        <img className="rounded-t-lg h-52 object-cover" src={projeto.image} alt={`Projeto ${projeto.title}`} />
+                    // Cards
+                    <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md">
+                        <div className="relative overflow-hidden h-48">
+                            <img src={projeto.image} 
+                                alt={`Projeto ${projeto.title}`}
+                                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 p-4 text-white">
+                                <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium">{projeto.tag}</span>
+                            </div>
+                        </div>
 
-                        <div className="p-5">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{projeto.title}</h5>
-                            <div className="mb-4 flex flex-wrap">
+                        <div className="p-6">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">{projeto.title}</h3>
+                            <p className="text-gray-600 mb-4">{projeto.description}</p>
+                            <div className="flex flex-wrap gap-2 mb-4">
                                 {projeto.stacks.map((stack, idx) => (
-                                    <span key={idx} className="bg-gray-700 text-gray-400 text-xs font-medium me-2 px-2 py-1 rounded border border-gray-500">{stack}</span>
+                                    <span key={idx} className="bg-gray-300 text-gray-800 font-medium px-2 py-1 rounded text-xs">{stack}</span>
+                                    
                                 ))}
                             </div>
-                            
-                            <p className="h-24 mb-3 font-normal text-gray-400">{projeto.description}</p>
-                                
-                            <div className="flex gap-2">
-                                {projeto.appUrl && 
-                                    <a href={projeto.appUrl} target="_blank" 
-                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">
-                                            APP
-                                    </a>
-                                }
-                                    <a href={projeto.codeUrl} target="_blank" 
-                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-gray-600 hover:bg-gray-700 focus:ring-gray-800">
-                                            CODE
-                                    </a>
+                            <div className="flex justify-between items-center mt-10">
+                                <a href={projeto.appUrl} className="text-orange-600 font-semibold hover:text-orange-800">Deploy</a>
+                                <a href={projeto.codeUrl} className="text-gray-500 hover:text-orange-600 font-semibold">Code</a>
                             </div>
-
                         </div>
                     </div>                    
                 ))}
-
             </div>
-        </section>
+            
+            <div className="text-center mt-12">
+                <a href="#" className="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-700 transition-all">
+                    Ver Mais Projetos <i className="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
     )
 }
