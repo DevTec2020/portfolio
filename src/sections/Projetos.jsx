@@ -15,7 +15,7 @@ import Todolist from "../assets/Projetos/To-do-list.jpg"
 
 export function Projetos() {
     return (
-        <section id="projetos" className="py-16 bg-gray-100">
+        <section id="Projetos" className="py-10 bg-gray-100">
         <div className="container mx-auto px-4">
             <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-orange-400 mb-4">Meus Projetos</h2>
