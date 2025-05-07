@@ -50,13 +50,13 @@ export function Capa(){
             </div>
 
             {/* Empresas */}
-            <div className=" flex flex-col items-center justify-center py-8 px-4">
+            <div className=" flex flex-col items-center justify-center py-3 px-4">
                 <div className="w-full max-w-[900px] text-center ">
                     <h3 className="text-xl sm:text-2xl font-semibold text-gray-400 text-center mb-2">
                         Clientes e Parceiros
                     </h3>
                     <p className="text-gray-600 max-w-2xl mx-auto">Alguns dos clientes que já tive o prazer de trabalhar</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-items-center gap-7 grayscale">
+                    <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-items-center gap-7 grayscale mt-5">
                         <img src={gdr} alt="logo Gdr" className="h-20 md:h-24" />
                         <img src={fortes} alt="logo Fortes" className="h-14 md:h-16" />
                         <img src={superar} alt="logo Superar" className="h-28 md:h-32" />
