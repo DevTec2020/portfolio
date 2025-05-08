@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 import gdr from "../assets/empresas/gdr.png"
 import fortes from "../assets/empresas/fortes.png"
 import superar from "../assets/empresas/superar.png"
@@ -24,27 +27,29 @@ export function Capa(){
   
     return (
         <section className="flex flex-col justify-center">
+            {/* WhatsApp Float Button */}
+            <a href="https://wa.me/85985646542" class="fixed w-14 h-14 bottom-6 right-6 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all" target="_blank" aria-label="Fale comigo pelo WhatsApp">
+                <FontAwesomeIcon icon={faWhatsapp} size="lg" className="text-white" />
+            </a>
+
             {/*Apresentação */}
             <div className="flex flex-col items-start h-full text-left px-5 sm:px-32 py-32 sm:py-40 bg-cover bg-center text-white"
                 style={{ backgroundImage: `url(${Bgcapa})` }}
             >
                 <h2 className="sm:text-4xl text-2xl font-light">Olá 👋! sou Leonardo Batista</h2>
-                <h1 className="sm:text-5xl text-2xl font-bold">
+                <h1 className="sm:text-5xl text-2xl font-bold mb-6">
                     Desenvolvedor 
                     <span className="ms-4 text-orange-500">{cargoDev}</span>
                 </h1>
+                <p className="text-xl mb-8">Transformo ideias em soluções digitais, responsivas e de alto desempenho</p>
 
-                <div className="space-x-5 pt-20">
-                <a href="https://www.linkedin.com/in/DevTec-LeoBatista/" target="_blank">
-                    <button className="px-10 py-4 transition delay-75 duration-500 bg-orange-500 hover:bg-white hover:text-orange-500 rounded-lg font-bold border-2 border-orange-500">
-                    Linkedin
-                    </button>
+                <div className="space-x-5 pt-10">
+                <a href="#Projetos" className="px-10 py-4 transition delay-75 duration-500 bg-orange-500 hover:bg-white hover:text-orange-500 rounded-lg font-bold border-2 border-orange-500">
+                    Ver Projetos
                 </a>  
 
-                <a href="https://github.com/DevTec2020" target="_blank">
-                    <button className="px-10 py-4 transition delay-75 duration-500 hover:bg-white hover:text-orange-500 rounded-lg font-bold text-orange-500 border-2 border-orange-500">
-                    GitHub
-                    </button>
+                <a href="#Contato" className="px-10 py-4 transition delay-75 duration-500 hover:bg-white hover:text-orange-500 rounded-lg font-bold text-orange-500 border-2 border-orange-500">
+                    Fale Comigo
                 </a>
                 </div>
             </div>
