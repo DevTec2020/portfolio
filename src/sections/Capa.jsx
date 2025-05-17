@@ -29,6 +29,11 @@ export function Capa(){
     return (
         <>
         <section id="inicio" className="text-gray-600 py-20">
+            {/* WhatsApp Float Button */}
+            <a href="https://wa.me/85985646542" class="fixed w-14 h-14 bottom-6 right-6 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all" target="_blank" aria-label="Fale comigo pelo WhatsApp">
+                <FontAwesomeIcon icon={faWhatsapp} size="lg" className="text-white" />
+            </a>
+
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 mb-10 md:mb-0">
                     <h2 className="sm:text-3xl text-2xl font-light">Olá 👋! sou Leonardo Batista</h2>
