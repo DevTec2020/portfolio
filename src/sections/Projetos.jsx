@@ -129,8 +129,8 @@ export function Projetos() {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center mt-10">
-                                <a href={projeto.appUrl} className="text-orange-600 font-semibold hover:text-orange-800">Deploy</a>
-                                <a href={projeto.codeUrl} className="text-gray-500 hover:text-orange-600 font-semibold">Code</a>
+                                <a href={projeto.appUrl} target="_blank" className="text-orange-600 font-semibold hover:text-orange-800">Deploy</a>
+                                <a href={projeto.codeUrl} target="_blank" className="text-gray-500 hover:text-orange-600 font-semibold">Code</a>
                             </div>
                         </div>
                     </div>                    
