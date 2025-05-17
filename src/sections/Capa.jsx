@@ -28,7 +28,7 @@ export function Capa(){
   
     return (
         <>
-        <section id="inicio" class="hero-gradient text-gray-600 py-20">
+        <section id="inicio" class="text-gray-600 py-20">
             <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h2 className="sm:text-3xl text-2xl font-light">Olá 👋! sou Leonardo Batista</h2>
