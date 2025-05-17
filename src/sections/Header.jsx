@@ -6,27 +6,19 @@ export function Header() {
     return (
         <header >
             {/* Menu para telas maiores */}
-            <nav className="hidden sm:flex justify-around items-center py-5 font-semibold text-lg z-10  top-0 w-full border-b-2 border-orange-500 ">
+            <div className="hidden sm:flex justify-around items-center py-5 font-semibold text-lg z-10  top-0 w-full border-b-2 border-orange-500 ">
                 <div>
                     <code className='text-orange-500 text-3xl'>
                         &lt;LeoBatista/&gt;
                     </code>
                 </div>
-                <div>
-                    <ul className="flex space-x-10">
-                        <li className='transition delay-75 duration-500 hover:text-orange-500'>
-                            <a href="#Sobre">Sobre</a>    
-                        </li>
-                        <li className='transition delay-75 duration-500 hover:text-orange-500'>
-                            <a href="#Projetos">Projetos</a>
-                        </li>
-                        <li className=' py-0.5 px-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition'>
-                            <a href="#Contato">Contato</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#Projetos" class="text-gray-700 hover:text-orange-500 font-medium pb-1">Projetos</a>
+                    <a href="#Sobre" class="text-gray-700 hover:text-orange-500 font-medium pb-1">Sobre</a>
+                    <a href="#Contato" class="py-0.5 px-3 bg-orange-500 text-white font-medium pb-1 rounded-lg shadow-md hover:bg-orange-600 transition">Contato</a>
+                </nav>
+            </div>
 
             {/* Menu para telas menores */}
             <div className="sm:hidden flex justify-between font-semibold items-center p-4 z-10 top-0 w-full ">
