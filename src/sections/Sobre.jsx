@@ -5,24 +5,41 @@ import firebird from "../assets/firebird.png";
 
 export function Sobre() {
   return (
-    <section id="Sobre" className="flex items-center justify-center min-h-screen bg-white px-8 py-5">
-        <div className="sm:grid grid-cols-2 max-w-6xl gap-8 items-center">
+    <section id="Sobre" className="container mx-auto px-4 flex flex-col md:flex-row items-center bg-white py-5">
+        <div className="sm:grid grid-cols-2 gap-8 items-center">
+            {/* Imagem */}
+            <div className="md:w-1/2 mb-10">
+                <img
+                    src={imgSection2}
+                    alt="Designer working on laptop"
+                    className="rounded-lg shadow-lg max-w-full"
+                />
+            </div>
+            
             {/* Texto */}
             <div>
                 <h1 className="text-4xl font-semibold text-orange-400">
                     Sobre
                 </h1>
+
                 <p className="text-gray-600 mt-4 text-lg">
-                    Desenvolvedor web apaixonado por tecnologia, com conhecimento em
-                    front-end e back-end. Trabalho com React, Tailwind, Node.js, e outras
-                    ferramentas modernas do ecossistema JavaScript. Comecei minha
-                    trajetória na área de TI aos 16 anos, acumulando experiência em
-                    suporte técnico e metodologias ágeis, como Scrum e ITIL. Participo
-                    ativamente de eventos e comunidades tech, sempre em busca de
-                    aprendizado e inovação, transformando ideias em soluções funcionais e
+                    Sou consultor de suporte e tenho conhecimento em desenvolvimento Web atuando com criação de sites e hospedagem,
+                    incluindo migração e gerenciamento em plataformas como cPanel e HostGator. Participo ativamente de eventos de tecnologia, sempre em busca de
+                    aprender novas ferramentas assim transformo ideias em soluções web funcionais e
                     responsivas.
                 </p>
+                
+                <h2 className="mt-9 text-3xl font-semibold text-orange-400">
+                    Certificações
+                </h2>
+                <p className="flex flex-wrap gap-2 mt-4 text-lg items-center">
+                    <img src="https://www.e-tp.uk/wp-content/uploads/2019/01/ITIL-f-v3.jpg" className="h-16" alt="ITIL v3 logo" />
+                    <img src="https://centercursos.com.br/wp-content/uploads/2020/03/Remote-worker-professional-certificate-certiprof.png" className="h-28" alt="RWVCPC CertProf logo" />
+                    <img src="https://www.izmirsadigov.com/wp-content/uploads/2021/02/CertiProf-Badge-SFPC.png" className="h-28" alt="RWVCPC CertProf logo" />
 
+
+
+                </p>
                 <h2 className="mt-9 text-3xl font-semibold text-orange-400">
                     Skills
                 </h2>
@@ -59,14 +76,6 @@ export function Sobre() {
                 </a>
             </div>
 
-            {/* Imagem */}
-            <div className="hidden sm:flex justify-end">
-                <img
-                    src={imgSection2}
-                    alt="Designer working on laptop"
-                    className="rounded-lg shadow-lg max-w-full"
-                />
-            </div>
         </div>
     </section>
   );
