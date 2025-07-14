@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 
 import profile from "../assets/EuCapa.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import gdr from "../assets/empresas/gdr.png"
 import fortes from "../assets/empresas/fortes.png"
@@ -41,7 +42,15 @@ export function Capa(){
                         <span>Desenvolvedor</span> 
                         <span className="ms-4 text-orange-500">{cargoDev}</span>
                     </h2>
-                    <p className="text-xl mb-8">Transformo ideias em soluções web, responsivas e de alto desempenho utilizando as melhores tecnologias do mercado.</p>
+                    <p className="text-xl mb-2">Transformo ideias em soluções web, responsivas e de alto desempenho utilizando as melhores tecnologias do mercado.</p>
+                   
+                    <div className="flex space-x-4 text-2xl mb-8">
+                        <a href="https://github.com/DevTec2020" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
+                        <a href="mailto:leonardo.silva.inf@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
+                        <a href="https://www.linkedin.com/in/devtec-leobatista/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+                        <a href="https://wa.me/85985646542" target="_blank"><FontAwesomeIcon icon={faWhatsapp}/></a>
+                    </div>
+                    
                     <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#Projetos" className="px-10 py-4 text-center transition-all bg-orange-500 text-white rounded-lg font-bold border-2 border-orange-500">
                             Ver Projetos
