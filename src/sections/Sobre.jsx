@@ -25,11 +25,11 @@ export function Sobre() {
                         <div className="w-20 h-1 bg-orange-400 mx-auto"></div>
                     </div>
 
-                    <p className="text-gray-600 mt-4 text-lg">
-                        Sou consultor de suporte e tenho conhecimento em desenvolvimento Web atuando com criação e hospedagem de sites,
-                        incluindo migração e gerenciamento em plataformas como cPanel e HostGator. Participo ativamente de eventos de tecnologia, sempre em busca de
-                        aprender novas ferramentas assim transformo ideias em soluções web funcionais e
-                        responsivas.
+                    <p className="text-gray-600 mt-4 text-lg text-justify">
+                        Sou desenvolvedor Web Front-end com experiência prática em React, Tailwind CSS e JavaScript, atuando no desenvolvimento, 
+                        migração e gerenciamento de sites em ambientes como cPanel e HostGator. Tenho conhecimento em automações com Python, 
+                        voltadas à otimização de rotinas e aumento de produtividade. Participação ativa em eventos e comunidades de tecnologia, 
+                        sempre em busca das melhores práticas e tendências do setor.
                     </p>
                     
                     <h2 className="mt-9 text-3xl font-semibold text-orange-400">
@@ -49,6 +49,7 @@ export function Sobre() {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="h-10" alt="css3 logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="h-10" alt="javascript logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="h-10" alt="typescript logo"  />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="h-10" alt="python logo" />
                         <img src="https://skillicons.dev/icons?i=bootstrap" className="h-10" alt="bootstrap logo"  />
                         <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" className="h-10" alt="tailwindcss logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg" className="h-10" alt="bulma logo" />
