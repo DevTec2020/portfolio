@@ -12,19 +12,19 @@ export function Contato(){
         <div className="grid sm:grid-cols-2 max-w-6xl gap-8 items-center">
 
             {/* Imagem */}
-            <div className="flex justify-end">
+            <div className="flex justify-end overflow-hidden border-4 border-orange-500 shadow-2xl rounded-lg">
                 <img
                     src={imgSection4}
                     alt="Designer working on laptop"
-                    className="rounded-lg shadow-lg max-w-full"
+                    className="w-full h-full object-cover"
                 />
             </div>
 
             {/* Texto */}
             <div className="">
-                <h1 className="text-4xl  font-bold text-[#C4A484]">
-                    Contato
-                </h1>
+                <h1 className="text-4xl font-bold text-orange-400 mb-4">Contato</h1>
+                <div className="w-20 h-1 bg-orange-400 mx-8"></div>
+                
 
                 <div className="mt-10 space-y-4">
                   {[{
