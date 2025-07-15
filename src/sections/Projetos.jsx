@@ -10,6 +10,8 @@ import GaleriaDev from "../assets/Projetos/GaleriaDev.jpg"
 import Supermarket from "../assets/Projetos/Supermarket.jpg"
 import Despesas from "../assets/Projetos/Reembolso.jpg"
 import Todolist from "../assets/Projetos/To-do-list.jpg"
+import gdr from "../assets/Projetos/gdr.jpg"
+
 
 
 
@@ -25,6 +27,14 @@ export function Projetos() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/*  Array com os projetos */}
                 {[{
+                    image: gdr,
+                    title: "Site GDR",
+                    tag: "Landing Page",
+                    stacks: ["React", "Tailwind", "Javascript"],
+                    description: "Landing Page moderna e responsiva projetada para a empresa GDR.",
+                    appUrl: "https://landing-page-gdr.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/LandingPage-GDR"                    
+                },{
                     image: SiteNote,
                     title: "SiteNote",
                     tag: "Sistema Web",
