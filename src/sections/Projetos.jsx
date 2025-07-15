@@ -11,6 +11,8 @@ import Supermarket from "../assets/Projetos/Supermarket.jpg"
 import Despesas from "../assets/Projetos/Reembolso.jpg"
 import Todolist from "../assets/Projetos/To-do-list.jpg"
 import gdr from "../assets/Projetos/gdr.jpg"
+import Loki from "../assets/Projetos/loki.jpg"
+
 
 
 
@@ -27,6 +29,14 @@ export function Projetos() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/*  Array com os projetos */}
                 {[{
+                    image: Loki,
+                    title: "Loki",
+                    tag: "Sistema Back-end",
+                    stacks: ["Python", "Tkinter"],
+                    description: "Sistema que automatiza a criação de ambientes nuvem para a Fortes.",
+                    appUrl: null,
+                    codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
+                },{
                     image: gdr,
                     title: "Site GDR",
                     tag: "Landing Page",
