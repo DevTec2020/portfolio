@@ -9,7 +9,8 @@ import gdr from "../assets/empresas/gdr.png"
 import fortes from "../assets/empresas/fortes.png"
 import superar from "../assets/empresas/superar.png"
 import fusion from "../assets/empresas/fusion.png"
-import Bgcapa from "../assets/teste.jpg"
+import flyjobs from "../assets/empresas/flyjobs.jpg"
+
 
 
 export function Capa(){
@@ -72,6 +73,17 @@ export function Capa(){
                             <span className="text-sm md:text-base">7+ anos de experiência com TI</span>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="mt-36">
+                <h2 className="text-2xl font-semibold text-orange-400 text-center">Empresas que confiam no meu trabalho</h2>
+                <div className="flex flex-wrap justify-center items-center gap-10 mt-10">
+                    <img src={gdr} alt="Logo GDR" className="h-16" />
+                    <img src={fortes} alt="Logo Fortes" className="h-16"/>
+                    <img src={superar} alt="Logo Superar" className="h-24"/>
+                    <img src={fusion} alt="Logo Fusion" className="h-18"/>
+                    <img src={flyjobs} alt="Logo Flyjobs" className="h-16"/>
                 </div>
             </div>
         </section>
