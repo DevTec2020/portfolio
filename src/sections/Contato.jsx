@@ -3,7 +3,7 @@ import Email from "../assets/ContatoIco/Email.svg"
 import Linkedin from "../assets/ContatoIco/Linkedin.svg"
 import Whatsapp from "../assets/ContatoIco/Whatsapp.svg"
 
-import imgSection4 from "../assets/Profile.jpg";
+import imgSection4 from "../assets/EuContato.png"
 
 
 export function Contato(){
@@ -15,7 +15,7 @@ export function Contato(){
             <div className="flex justify-end overflow-hidden border-4 border-orange-500 shadow-2xl rounded-lg">
                 <img
                     src={imgSection4}
-                    alt="Designer working on laptop"
+                    alt="minha Foto"
                     className="w-full h-full object-cover"
                 />
             </div>
