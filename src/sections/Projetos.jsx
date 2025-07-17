@@ -11,7 +11,7 @@ import Supermarket from "../assets/Projetos/Supermarket.jpg"
 import Despesas from "../assets/Projetos/Reembolso.jpg"
 import Todolist from "../assets/Projetos/To-do-list.jpg"
 import gdr from "../assets/Projetos/gdr.jpg"
-import Loki from "../assets/Projetos/loki.jpg"
+import Loki from "../assets/Projetos/Loki.jpg"
 
 
 
