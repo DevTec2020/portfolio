@@ -44,7 +44,7 @@ export function Sobre() {
                     <h2 className="mt-9 text-3xl font-semibold text-orange-400">
                         Skills
                     </h2>
-                    <p className="flex flex-wrap gap-2 mt-4 text-lg">
+                    <p className="flex flex-wrap items-center gap-2 mt-4 text-lg">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="h-10" alt="html5 logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="h-10" alt="css3 logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="h-10" alt="javascript logo"  />
@@ -70,7 +70,8 @@ export function Sobre() {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" className="h-10" alt="jest logo"/>
                         <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" className="h-10" alt="hook form logo"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="h-10" alt="docker logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="h-12" alt="docker logo" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" className="h-8" alt="aws logo" />
                     </p>
 
                     <a href="https://docs.google.com/document/d/1RC1nj4_KHZKpE8c9zlwvZ9dIJplbxS71/export?format=pdf" target="_blank">
