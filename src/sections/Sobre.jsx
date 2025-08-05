@@ -71,7 +71,6 @@ export function Sobre() {
                         <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" className="h-10" alt="hook form logo"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="h-12" alt="docker logo" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" className="h-8" alt="aws logo" />
                     </p>
 
                     <a href="https://docs.google.com/document/d/1RC1nj4_KHZKpE8c9zlwvZ9dIJplbxS71/export?format=pdf" target="_blank">
