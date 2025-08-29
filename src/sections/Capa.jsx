@@ -10,6 +10,8 @@ import fortes from "../assets/empresas/fortes.png"
 import superar from "../assets/empresas/superar.png"
 import fusion from "../assets/empresas/fusion.png"
 import flyjobs from "../assets/empresas/flyjobs.jpg"
+import mvx from "../assets/empresas/MVX.jpg"
+import emive from "../assets/empresas/Emive.png"
 
 
 
@@ -84,6 +86,8 @@ export function Capa(){
                     <img src={superar} alt="Logo Superar" className="h-24"/>
                     <img src={fusion} alt="Logo Fusion" className="h-18"/>
                     <img src={flyjobs} alt="Logo Flyjobs" className="h-16"/>
+                    <img src={mvx} alt="Logo MVX" className="h-16"/>
+                    <img src={emive} alt="Logo Emive" className="h-16"/>
                 </div>
             </div>
         </section>

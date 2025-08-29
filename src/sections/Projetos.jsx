@@ -12,6 +12,7 @@ import Despesas from "../assets/Projetos/Reembolso.jpg"
 import Todolist from "../assets/Projetos/To-do-list.jpg"
 import gdr from "../assets/Projetos/gdr.jpg"
 import Loki from "../assets/Projetos/Loki.jpg"
+import Emive from "../assets/Projetos/Emive.jpg"
 
 
 
@@ -44,6 +45,14 @@ export function Projetos() {
                     description: "Landing Page moderna e responsiva projetada para a empresa GDR.",
                     appUrl: "https://landing-page-gdr.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/LandingPage-GDR"                    
+                },{
+                    image: Emive,
+                    title: "Franqueado Emive",
+                    tag: "Landing Page",
+                    stacks: ["React", "Tailwind", "Javascript"],
+                    description: "Landing Page moderna e responsiva projetada para um franqueado Emive.",
+                    appUrl: "https://landing-page-vinicius-nine.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/LandingPage-Emive"                    
                 },{
                     image: SiteNote,
                     title: "SiteNote",
