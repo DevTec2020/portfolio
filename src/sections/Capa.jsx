@@ -72,7 +72,7 @@ export function Capa(){
                             />
                         </div>
                         <div className="absolute -bottom-2 -right-5 bg-white text-orange-500 px-6 py-2 rounded-full shadow-lg font-bold">
-                            <span className="text-sm md:text-base">7+ anos de experiência com TI</span>
+                            <span className="text-sm md:text-base">10+ anos de experiência com TI</span>
                         </div>
                     </div>
                 </div>
