@@ -12,7 +12,7 @@ import fusion from "../assets/empresas/fusion.png"
 import flyjobs from "../assets/empresas/flyjobs.jpg"
 import mvx from "../assets/empresas/MVX.jpg"
 import emive from "../assets/empresas/Emive.png"
-
+import Airtek from "../assets/empresas/Air-tek.jpg"
 
 
 export function Capa(){
@@ -88,6 +88,7 @@ export function Capa(){
                     <img src={flyjobs} alt="Logo Flyjobs" className="h-16"/>
                     <img src={mvx} alt="Logo MVX" className="h-16"/>
                     <img src={emive} alt="Logo Emive" className="h-16"/>
+                    <img src={Airtek} alt="Logo Emive" className="h-16"/>
                 </div>
             </div>
         </section>
