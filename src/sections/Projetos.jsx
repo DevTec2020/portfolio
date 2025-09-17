@@ -13,6 +13,7 @@ import Todolist from "../assets/Projetos/To-do-list.jpg"
 import gdr from "../assets/Projetos/gdr.jpg"
 import Loki from "../assets/Projetos/Loki.jpg"
 import Emive from "../assets/Projetos/Emive.jpg"
+import AirTek from "../assets/Projetos/AirTek.jpg"
 
 
 
@@ -38,8 +39,16 @@ export function Projetos() {
                     appUrl: null,
                     codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
                 },{
+                    image: AirTek,
+                    title: "Air-Tek Compressores",
+                    tag: "Landing Page",
+                    stacks: ["React", "Tailwind", "Javascript"],
+                    description: "Landing Page moderna e responsiva projetada para a empresa AirTek.",
+                    appUrl: "https://landing-page-air-tek.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/LandingPage-AirTek"                    
+                },{
                     image: gdr,
-                    title: "Site GDR",
+                    title: "GDR Representações",
                     tag: "Landing Page",
                     stacks: ["React", "Tailwind", "Javascript"],
                     description: "Landing Page moderna e responsiva projetada para a empresa GDR.",
