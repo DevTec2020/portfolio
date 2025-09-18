@@ -18,7 +18,6 @@ import AirTek from "../assets/Projetos/AirTek.jpg"
 
 
 
-
 export function Projetos() {
     return (
         <section id="Projetos" className="py-10 bg-gray-100">
