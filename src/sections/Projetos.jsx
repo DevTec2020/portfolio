@@ -13,7 +13,7 @@ import Todolist from "../assets/Projetos/To-do-list.jpg"
 import gdr from "../assets/Projetos/gdr.jpg"
 import Loki from "../assets/Projetos/Loki.jpg"
 import Emive from "../assets/Projetos/Emive.jpg"
-import AirTek from "../assets/Projetos/AirTek.jpg"
+import AirTek from "../assets/Projetos/Airtek.jpg"
 
 
 
