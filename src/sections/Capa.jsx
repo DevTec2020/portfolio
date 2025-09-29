@@ -89,7 +89,7 @@ export function Capa(){
                     <img src={mvx} alt="Logo MVX" className="h-16"/>
                     <img src={emive} alt="Logo Emive" className="h-16"/>
                     <img src={Airtek} alt="Logo Airtek" className="h-16"/>
-                    <img src={Cascar} alt="Logo Cascar" className="h-16"/>
+                    <img src={Cascar} alt="Logo Cascar" className="h-10"/>
                 </div>
             </div>
         </section>
