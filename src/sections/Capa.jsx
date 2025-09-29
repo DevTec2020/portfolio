@@ -13,7 +13,7 @@ import flyjobs from "../assets/empresas/flyjobs.jpg"
 import mvx from "../assets/empresas/MVX.jpg"
 import emive from "../assets/empresas/Emive.png"
 import Airtek from "../assets/empresas/Air-tek.jpg"
-
+import Cascar from "../assets/empresas/Cascar.png"
 
 export function Capa(){
     const [cargoDev, setCargoDev] = useState("")
@@ -88,7 +88,8 @@ export function Capa(){
                     <img src={flyjobs} alt="Logo Flyjobs" className="h-16"/>
                     <img src={mvx} alt="Logo MVX" className="h-16"/>
                     <img src={emive} alt="Logo Emive" className="h-16"/>
-                    <img src={Airtek} alt="Logo Emive" className="h-16"/>
+                    <img src={Airtek} alt="Logo Airtek" className="h-16"/>
+                    <img src={Cascar} alt="Logo Cascar" className="h-16"/>
                 </div>
             </div>
         </section>

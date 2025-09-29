@@ -38,22 +38,6 @@ export function Projetos() {
                     appUrl: null,
                     codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
                 },{
-                    image: AirTek,
-                    title: "Air-Tek Compressores",
-                    tag: "Landing Page",
-                    stacks: ["React", "Tailwind", "Javascript"],
-                    description: "Landing Page moderna e responsiva projetada para a empresa AirTek.",
-                    appUrl: "https://landing-page-air-tek.vercel.app",
-                    codeUrl: "https://github.com/DevTec2020/LandingPage-AirTek"                    
-                },{
-                    image: gdr,
-                    title: "GDR Representações",
-                    tag: "Landing Page",
-                    stacks: ["React", "Tailwind", "Javascript"],
-                    description: "Landing Page moderna e responsiva projetada para a empresa GDR.",
-                    appUrl: "https://landing-page-gdr.vercel.app",
-                    codeUrl: "https://github.com/DevTec2020/LandingPage-GDR"                    
-                },{
                     image: Emive,
                     title: "Franqueado Emive",
                     tag: "Landing Page",
