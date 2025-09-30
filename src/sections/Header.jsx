@@ -13,10 +13,10 @@ export function Header() {
                     </code>
                 </div>
                 
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#Projetos" class="text-gray-700 hover:text-orange-500 font-medium pb-1">Projetos</a>
-                    <a href="#Sobre" class="text-gray-700 hover:text-orange-500 font-medium pb-1">Sobre</a>
-                    <a href="#Contato" class="py-0.5 px-3 bg-orange-500 text-white font-medium pb-1 rounded-lg shadow-md hover:bg-orange-600 transition">Contato</a>
+                <nav className="hidden md:flex space-x-8">
+                    <a href="#Projetos" className="text-gray-700 hover:text-orange-500 font-medium pb-1">Projetos</a>
+                    <a href="#Sobre" className="text-gray-700 hover:text-orange-500 font-medium pb-1">Sobre</a>
+                    <a href="#Contato" className="py-0.5 px-3 bg-orange-500 text-white font-medium pb-1 rounded-lg shadow-md hover:bg-orange-600 transition">Contato</a>
                 </nav>
             </div>
 

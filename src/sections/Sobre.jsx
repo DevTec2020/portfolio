@@ -1,5 +1,5 @@
-import imgSection2 from "../assets/imgSection2.jpg";
-import firebird from "../assets/firebird.png";
+import imgSection2 from "../assets/imgSection2.webp";
+import firebird from "../assets/firebird.webp";
 
 
 
@@ -66,7 +66,7 @@ export function Sobre() {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="h-10" alt="react logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="h-10" alt="express logo"  />
                         <img src="https://cdn.simpleicons.org/zod/3178C6" className="h-10" alt="zod logo" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" class="h-10" alt="electron logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" className="h-10" alt="electron logo" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" className="h-10" alt="jest logo"/>
                         <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" className="h-10" alt="hook form logo"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />

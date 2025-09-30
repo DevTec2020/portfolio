@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
 
-import profile from "../assets/EuCapa.png"
+import profile from "../assets/EuCapa.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import gdr from "../assets/empresas/gdr.png"
-import fortes from "../assets/empresas/fortes.png"
-import superar from "../assets/empresas/superar.png"
-import fusion from "../assets/empresas/fusion.png"
-import flyjobs from "../assets/empresas/flyjobs.jpg"
-import mvx from "../assets/empresas/MVX.jpg"
-import emive from "../assets/empresas/Emive.png"
-import Airtek from "../assets/empresas/Air-tek.jpg"
-import Cascar from "../assets/empresas/Cascar.png"
+import gdr from "../assets/empresas/gdr.webp"
+import fortes from "../assets/empresas/fortes.webp"
+import fusion from "../assets/empresas/fusion.webp"
+import flyjobs from "../assets/empresas/flyjobs.webp"
+import mvx from "../assets/empresas/MVX.webp"
+import emive from "../assets/empresas/Emive.webp"
+import Airtek from "../assets/empresas/Air-tek.webp"
+import Cascar from "../assets/empresas/Cascar.webp"
 
 export function Capa(){
     const [cargoDev, setCargoDev] = useState("")
@@ -34,7 +33,7 @@ export function Capa(){
         <>
         <section id="inicio" className="text-gray-600 py-20">
             {/* WhatsApp Float Button */}
-            <a href="https://wa.me/85985646542" class="fixed w-14 h-14 bottom-6 right-6 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all" target="_blank" aria-label="Fale comigo pelo WhatsApp">
+            <a href="https://wa.me/85985646542" className="fixed w-14 h-14 bottom-6 right-6 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all" target="_blank" aria-label="Fale comigo pelo WhatsApp">
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" className="text-white" />
             </a>
 
@@ -83,7 +82,6 @@ export function Capa(){
                 <div className="flex flex-wrap justify-center items-center gap-10 mt-10">
                     <img src={gdr} alt="Logo GDR" className="h-16" />
                     <img src={fortes} alt="Logo Fortes" className="h-16"/>
-                    <img src={superar} alt="Logo Superar" className="h-24"/>
                     <img src={fusion} alt="Logo Fusion" className="h-18"/>
                     <img src={flyjobs} alt="Logo Flyjobs" className="h-16"/>
                     <img src={mvx} alt="Logo MVX" className="h-16"/>

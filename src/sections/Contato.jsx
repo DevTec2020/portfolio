@@ -3,7 +3,7 @@ import Email from "../assets/ContatoIco/Email.svg"
 import Linkedin from "../assets/ContatoIco/Linkedin.svg"
 import Whatsapp from "../assets/ContatoIco/Whatsapp.svg"
 
-import imgSection4 from "../assets/EuContato.png"
+import imgSection4 from "../assets/EuContato.webp"
 
 
 export function Contato(){
