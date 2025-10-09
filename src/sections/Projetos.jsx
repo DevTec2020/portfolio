@@ -25,6 +25,14 @@ const PROJETO = [
                     appUrl: null,
                     codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
                 },{
+                    image: AirTek,
+                    title: "Site Air-tek",
+                    tag: "Site Institucional",
+                    stacks: ["React", "Tailwind", "Javascript", "Zod", "EmailJS"],
+                    description: "Site institucional desenvolvido para a Air-tek, revendedora de compressores de ar. Com validação de formulário via Zod e envio de e-mail via EmailJS.",
+                    appUrl: "https://landing-page-air-tek.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/LandingPage-AirTek"                    
+                },{
                     image: Emive,
                     title: "Franqueado Emive",
                     tag: "Landing Page",
