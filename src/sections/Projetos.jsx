@@ -92,7 +92,7 @@ const PROJETO = [
                     image: GaleriaDev,
                     title: "GaleriaDev",
                     tag: "Sistema Web",
-                    stacks: ["React", "Tailwind", "TypeScript"],
+                    stacks: ["React", "Tailwind", "TypeScript", "API"],
                     description: "Galeria dinâmica que busca imagens via API, permitindo salvar favoritas com persistência em localStorage.",
                     appUrl: "https://galeriadev.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/GaleriaDev"                    
