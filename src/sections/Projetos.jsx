@@ -14,17 +14,19 @@ import gdr from "../assets/Projetos/gdr.webp"
 import Loki from "../assets/Projetos/Loki.webp"
 import Emive from "../assets/Projetos/Emive.webp"
 import AirTek from "../assets/Projetos/Airtek.webp"
+import Cascar from "../assets/Projetos/Cascar.webp"
 
 const PROJETO = [
                 {
-                    image: Loki,
-                    title: "Loki",
-                    tag: "Automação",
-                    stacks: ["Python", "Tkinter"],
-                    description: "Sistema que automatiza a criação de ambientes nuvem para a Fortes.",
-                    appUrl: null,
-                    codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
-                },{
+                    image: Cascar,
+                    title: "Site Cascar",
+                    tag: "Site Institucional",
+                    stacks: ["React", "Tailwind", "Javascript", "Zod", "EmailJS"],
+                    description: "Site institucional desenvolvido para a Cascar Engenharia. Com validação de formulário via Zod e envio de e-mail via EmailJS.",
+                    appUrl: "https://landing-page-air-tek.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/LandingPage-AirTek"                    
+                },
+                {
                     image: AirTek,
                     title: "Site Air-tek",
                     tag: "Site Institucional",
@@ -40,6 +42,14 @@ const PROJETO = [
                     description: "Landing Page moderna e responsiva projetada para um franqueado Emive.",
                     appUrl: "https://landing-page-vinicius-nine.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/LandingPage-Emive"                    
+                },{
+                    image: Loki,
+                    title: "Loki",
+                    tag: "Automação",
+                    stacks: ["Python", "Tkinter"],
+                    description: "Sistema que automatiza a criação de ambientes nuvem para a Fortes.",
+                    appUrl: null,
+                    codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
                 },{
                     image: SiteNote,
                     title: "SiteNote",
