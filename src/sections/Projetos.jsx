@@ -12,6 +12,7 @@ import Despesas from "../assets/Projetos/Reembolso.webp"
 import Todolist from "../assets/Projetos/To-do-list.webp"
 import gdr from "../assets/Projetos/gdr.webp"
 import Loki from "../assets/Projetos/Loki.webp"
+import TrocaExe from "../assets/Projetos/TrocaExe.webp"
 import Emive from "../assets/Projetos/Emive.webp"
 import AirTek from "../assets/Projetos/Airtek.webp"
 import Cascar from "../assets/Projetos/Cascar.webp"
@@ -49,7 +50,15 @@ const PROJETO = [
                     stacks: ["Python", "Tkinter"],
                     description: "Sistema que automatiza a criação de ambientes nuvem para a Fortes.",
                     appUrl: null,
-                    codeUrl: "https://github.com/DevTec2020/Loki-V2"                    
+                    codeUrl: null                    
+                },{
+                    image: TrocaExe,
+                    title: "TrocaExe",
+                    tag: "Automação",
+                    stacks: ["Python", "Tkinter"],
+                    description: "Sistema que realiza a troca de executáveis em lote na nuvem da Fortes.",
+                    appUrl: null,
+                    codeUrl: null                    
                 },{
                     image: SiteNote,
                     title: "SiteNote",
@@ -149,7 +158,7 @@ export function Projetos() {
                 {PROJETO.map((projeto, index) => (
                     // Cards
                     <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-3 hover:shadow-lg transition-all duration-500 ease-in-out">
-                        <div className="relative overflow-hidden h-48">
+                        <div className="relative overflow-hidden h-[35vh]">
                             <img src={projeto.image} 
                                 alt={`Projeto ${projeto.title}`}
                                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
