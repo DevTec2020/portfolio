@@ -16,20 +16,29 @@ import TrocaExe from "../assets/Projetos/TrocaExe.webp"
 import Emive from "../assets/Projetos/Emive.webp"
 import AirTek from "../assets/Projetos/Airtek.webp"
 import Cascar from "../assets/Projetos/Cascar.webp"
+import PoupeMais from "../assets/Projetos/PoupeMais.webp"
 
 const PROJETO = [
                 {
+                    image: PoupeMais,
+                    title: "Ótica Poupe Mais",
+                    tag: "Landing Page",
+                    stacks: ["React", "Tailwind", "Javascript", "SEO"],
+                    description: "Landing Page responsiva projetada para funcionar como portfólio  da ótica.",
+                    appUrl: "https://landing-page-otica-poupe-mais.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/LandingPage-Otica-Poupe-Mais"                    
+                },
+                {
                     image: Cascar,
-                    title: "Site Cascar",
+                    title: "Cascar Engenharia",
                     tag: "Site Institucional",
                     stacks: ["React", "Tailwind", "Javascript", "Zod", "EmailJS"],
                     description: "Site institucional desenvolvido para a Cascar Engenharia. Com validação de formulário via Zod e envio de e-mail via EmailJS.",
                     appUrl: "https://landing-page-cascar-engenharia.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/LandingPage-Cascar-engenharia"                    
-                },
-                {
+                },{
                     image: AirTek,
-                    title: "Site Air-tek",
+                    title: "Air-tek Compressores",
                     tag: "Site Institucional",
                     stacks: ["React", "Tailwind", "Javascript", "Zod", "EmailJS"],
                     description: "Site institucional desenvolvido para a Air-tek, revendedora de compressores de ar. Com validação de formulário via Zod e envio de e-mail via EmailJS.",
