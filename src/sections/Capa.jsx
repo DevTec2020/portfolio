@@ -13,6 +13,7 @@ import mvx from "../assets/empresas/MVX.webp"
 import emive from "../assets/empresas/Emive.webp"
 import Airtek from "../assets/empresas/Air-tek.webp"
 import Cascar from "../assets/empresas/Cascar.webp"
+import Otica from "../assets/empresas/Logo_amarela.webp"
 
 export function Capa(){
     const [cargoDev, setCargoDev] = useState("")
@@ -88,6 +89,7 @@ export function Capa(){
                     <img src={emive} alt="Logo Emive" className="h-16"/>
                     <img src={Airtek} alt="Logo Airtek" className="h-16"/>
                     <img src={Cascar} alt="Logo Cascar" className="h-10"/>
+                    <img src={Otica} alt="Logo Otica" className="h-12"/>
                 </div>
             </div>
         </section>
