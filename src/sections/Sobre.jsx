@@ -45,33 +45,48 @@ export function Sobre() {
                         Skills
                     </h2>
                     <p className="flex flex-wrap items-center gap-2 mt-4 text-lg">
+                        {/* Linguagens e Core */}
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="h-10" alt="html5 logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="h-10" alt="css3 logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="h-10" alt="javascript logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="h-10" alt="typescript logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="h-10" alt="python logo" />
+
+                        {/* Frameworks Front-end */}
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="h-10" alt="react logo"  />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="h-10" alt="nextjs logo" />
+
+                        {/* Estilização */}
                         <img src="https://skillicons.dev/icons?i=bootstrap" className="h-10" alt="bootstrap logo"  />
                         <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" className="h-10" alt="tailwindcss logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg" className="h-10" alt="bulma logo" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" className="h-10" alt="sass logo"  />
-                        <img src="https://cdn.simpleicons.org/babel/F9DC3E" className="h-10" alt="babel logo"  />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" className="h-10" alt="webpack logo"  />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="h-10" alt="git logo"  />
-                        <img src="https://skillicons.dev/icons?i=github" className="h-10" alt="github logo"  />
+
+                        {/* Back-end e Ferramentas */}
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="h-10" alt="nodejs logo"  />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="h-10" alt="express logo"  />
+                        <img src="https://cdn.simpleicons.org/prisma/2D3748" className="h-10" alt="prisma logo" />
+                        <img src="https://vite.dev/logo.svg" className="h-10" alt="vite logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" className="h-10" alt="electron logo" />
+                        <img src="https://cdn.simpleicons.org/zod/3178C6" className="h-10" alt="zod logo" />
+                        <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" className="h-10" alt="hook form logo"/>
+
+                        {/* Bancos de Dados */}
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" className="h-10" alt="postgresql logo"  />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" className="h-10" alt="microsoftsqlserver logo"  />
                         <img src={firebird} className="h-10" alt="firebird logo" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="h-10" alt="firebase logo" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="h-10" alt="nodejs logo"  />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="h-10" alt="react logo"  />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="h-10" alt="express logo"  />
-                        <img src="https://cdn.simpleicons.org/zod/3178C6" className="h-10" alt="zod logo" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" className="h-10" alt="electron logo" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" className="h-10" alt="jest logo"/>
-                        <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" className="h-10" alt="hook form logo"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
+
+                        {/* DevOps e Cloud */}
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="h-12" alt="docker logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="h-10" alt="git logo"  />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png" className="w-12" alt="aws logo" />
+                        
+                        {/* Design e Testes */}
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-10" alt="figma logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" className="h-10" alt="jest logo"/>
                     </p>
+
 
                     <a href="https://docs.google.com/document/d/1RC1nj4_KHZKpE8c9zlwvZ9dIJplbxS71/export?format=pdf" target="_blank">
                         <button className="mt-10 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg shadow-md hover:bg-orange-500 transition">
