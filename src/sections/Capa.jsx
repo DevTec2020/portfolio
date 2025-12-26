@@ -32,7 +32,7 @@ export function Capa(){
   
     return (
         <>
-        <section id="inicio" className="text-gray-600 py-20">
+        <section id="inicio" className="bg-gray-100 text-gray-600 py-20">
             {/* WhatsApp Float Button */}
             <a href="https://wa.me/85985646542" className="fixed w-14 h-14 bottom-6 right-6 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl shadow-lg z-50 hover:bg-green-600 transition-all" target="_blank" aria-label="Fale comigo pelo WhatsApp">
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" className="text-white" />
@@ -79,7 +79,7 @@ export function Capa(){
             </div>
 
             <div className="mt-36">
-                <h2 className="text-2xl font-semibold text-orange-400 text-center">Empresas que confiam no meu trabalho</h2>
+                <h2 className="text-3xl font-semibold text-orange-400 text-center">Empresas que confiam no meu trabalho</h2>
                 <div className="flex flex-wrap justify-center items-center gap-10 mt-10">
                     <img src={gdr} alt="Logo GDR" className="h-16" />
                     <img src={fortes} alt="Logo Fortes" className="h-16"/>
