@@ -1,8 +1,11 @@
 'use client'
 import { motion } from "framer-motion";
 
+interface SideBarProps {
+  onClose: () => void;
+}
 
-export default function SideBar({ onClose }) {
+export default function SideBar({ onClose } : SideBarProps) {
   return (
     <>
       {/* Overlay */}
