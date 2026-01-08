@@ -1,6 +1,13 @@
+'use client';
 import Image from "next/image";
 
-import  EuCapa from "@/app/assets/EuCapa.webp"
+import  EuCapa from "@/app/assets/EuCapa.jpg"
+import  EuSobre from "@/app/assets/EuSobre.webp"
+import SideBar from "@/app/components/SideBar";
+
+
+
+
 import gdr from "@/app/assets/empresas/gdr.webp"
 import fortes from "@/app/assets/empresas/fortes.webp"
 import fusion from "@/app/assets/empresas/fusion.webp"
@@ -14,25 +21,63 @@ import Otica from "@/app/assets/empresas/Logo_amarela.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5, faCss3Alt, faJsSquare, faGitAlt, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faDownload, faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+
 
 export default function Home(){
   const neonBlue = "#00d4ff"; // O Azul Neon
+  const [isOpen, setIsOpen] = useState(false);
+  const icone = isOpen ? faXmark : faBars;
 
   return (
     <div className="bg-[#0a0a0a] text-white min-h-screen font-sans selection:bg-cyan-500 selection:text-black">
-      
-      {/* NAVBAR DESKTOP*/}
-      <nav className="flex justify-center items-center py-6 gap-8 text-sm uppercase tracking-widest font-medium">
-        <a href="#" className="hover:text-cyan-400 transition">Home</a>
-        <a href="#sobre" className="hover:text-cyan-400 transition">Sobre mim</a>
-        <a href="#habilidades" className="hover:text-cyan-400 transition">Habilidades</a>
-        <a href="#projetos" className="hover:text-cyan-400 transition">Projetos</a>
-        <a href="#contato" className="bg-cyan-600 px-6 py-2 rounded-lg hover:bg-cyan-500 transition">Contato</a>
-      </nav>
+      <header className="absolute top-0 left-0 w-full z-50">
+        <div className="container mx-auto px-6 flex justify-between items-center h-24">
+          {/* LOGO */}
+          <span className="text-cyan-400 font-bold text-2xl tracking-tighter hover:scale-105 transition-transform cursor-default">
+            &lt;LB/&gt;
+          </span>
+
+          {/* LINKS DESKTOP */}
+          <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium">
+            <a href="#" className="hover:text-cyan-400 transition">Home</a>
+            <a href="#sobre" className="hover:text-cyan-400 transition">Sobre mim</a>
+            <a href="#habilidades" className="hover:text-cyan-400 transition">Habilidades</a>
+            <a href="#projetos" className="hover:text-cyan-400 transition">Projetos</a>
+            <a href="#contato" className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
+             bg-cyan-500/10 backdrop-blur-md 
+             hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+             transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
+             hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
+              Contato
+            </a>
+          </nav>
+
+          {/* BOTÃO MOBILE */}
+          <button
+            className="md:hidden focus:outline-none p-2"
+            onClick={() => setIsOpen((s) => !s)}
+          >
+            <FontAwesomeIcon icon={icone} className="text-cyan-400 w-6 h-6 text-3xl " />
+          </button>
+        </div>
+      </header>
+
+      {/* NAVBAR MOBILE*/}
+      <AnimatePresence>
+        {isOpen && (
+          <SideBar
+            key="mobile-sidebar"
+            onClose={() => setIsOpen(false)}
+          />
+        )}
+      </AnimatePresence>
 
       {/* HERO */}
-      <section className="relative w-full min-h-[80vh] flex items-center bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+      <section className="relative w-full min-h-[90vh] flex items-center bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-10">
           
           {/* Lado Esquerdo */}
@@ -62,7 +107,7 @@ export default function Home(){
             {/* Círculo de brilho atrás da foto para dar o efeito Neon */}
             <div className="absolute inset-0 bg-cyan-400/20 blur-[60px] rounded-full"></div>
             
-            <div className="relative w-72 h-72 md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-cyan-500 shadow-[0_0_30px_rgba(0,242,255,0.2)]">
+            <div className="relative w-72 h-72 md:w-[500px] md:h-[500px] rounded-full overflow-hidden border-4 border-cyan-500 shadow-[0_0_30px_rgba(0,242,255,0.2)]">
               <Image
                 src={EuCapa}
                 alt="Leonardo Batista" 
@@ -80,18 +125,18 @@ export default function Home(){
 
 
       {/* CLIENTES */}
-      <section id="habilidades" className="py-20 bg-[#0f0f0f]">
+      <section className="py-20 bg-[#0f0f0f]">
         <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400 uppercase tracking-widest">Projetos desenvolvidos para</h3>
         <div className="flex flex-wrap justify-center gap-12">
-            <Image src={gdr} alt="Logo GDR" width={120} height={120}/>
-            <Image src={fortes} alt="Logo Fortes" width={120} height={120}/>
-            <Image src={fusion} alt="Logo Fusion" width={120} height={120}/>
-            <Image src={flyjobs} alt="Logo Flyjobs" width={120} height={120}/>
-            <Image src={mvx} alt="Logo MVX" width={120} height={120}/>
-            <Image src={emive} alt="Logo Emive" width={120} height={120}/>
-            <Image src={Airtek} alt="Logo Airtek" width={120} height={120}/>
-            <Image src={Cascar} alt="Logo Cascar" width={190} height={100}/>
-            <Image src={Otica} alt="Logo Otica" width={170} height={100}/>
+            <Image src={gdr} alt="Logo GDR" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={fortes} alt="Logo Fortes" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={fusion} alt="Logo Fusion" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={flyjobs} alt="Logo Flyjobs" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={mvx} alt="Logo MVX" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={emive} alt="Logo Emive" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={Airtek} alt="Logo Airtek" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={Cascar} alt="Logo Cascar" width={190} height={100} className="grayscale hover:grayscale-0"/>
+            <Image src={Otica} alt="Logo Otica" width={170} height={100} className="grayscale hover:grayscale-0"/>
         </div>
       </section>
 
@@ -100,7 +145,7 @@ export default function Home(){
       <section id="sobre" className="py-20 px-10 md:px-32 flex flex-col md:flex-row items-center gap-16">
         <div className="w-64 h-64 md:w-96 md:h-96 shrink-0 rounded-full overflow-hidden border-4 border-cyan-500 shadow-[0_0_30px_rgba(0,242,255,0.2)]">
             <Image
-              src={EuCapa} 
+              src={EuSobre} 
               alt="Dev" 
               className="w-full h-full object-cover" 
             />
@@ -121,7 +166,11 @@ export default function Home(){
           </div>
 
 
-          <a href="SEU_LINK_DO_DOCS" className="bg-cyan-600 text-black font-bold px-8 py-3 rounded hover:bg-cyan-400 transition flex items-center w-fit gap-2">
+          <a href="SEU_LINK_DO_DOCS" className="px-6 py-4 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
+             bg-cyan-500/10 backdrop-blur-md 
+             hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+             transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
+             hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
             <FontAwesomeIcon icon={faDownload} /> Baixar Currículo
           </a>
         </div>
@@ -149,7 +198,11 @@ export default function Home(){
               <div className="h-48 bg-neutral-800 rounded-t-lg mb-4 flex items-center justify-center italic text-gray-500">Preview Imagem</div>
               <div className="p-4 text-center">
                 <p className="text-sm text-gray-400 mb-4 italic">Descrição breve do seu projeto fullstack ou automação personalizada.</p>
-                <button className="bg-cyan-700 w-full py-2 rounded font-bold group-hover:bg-cyan-500 transition flex items-center justify-center gap-2">
+                <button className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
+             bg-cyan-500/10 backdrop-blur-md 
+             hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+             transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
+             hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
                    Ver Projeto
                 </button>
               </div>
