@@ -1,20 +1,20 @@
-import SiteNote from "../assets/Projetos/SiteNote.webp"
-import PetValley from "../assets/Projetos/PetValley.webp"
-import DevBurguer from "../assets/Projetos/DevBurguer.webp"
-import CadMetas from "../assets/Projetos/CadMetas.webp"
-import FormNasa from "../assets/Projetos/FormNasa.webp"
-import FormFusion from "../assets/Projetos/FormFusion.webp"
-import GaleriaDev from "../assets/Projetos/GaleriaDev.webp"
-import Supermarket from "../assets/Projetos/Supermarket.webp"
-import Despesas from "../assets/Projetos/Reembolso.webp"
-import Todolist from "../assets/Projetos/To-do-list.webp"
-import gdr from "../assets/Projetos/gdr.webp"
-import Loki from "../assets/Projetos/Loki.webp"
-import TrocaExe from "../assets/Projetos/TrocaExe.webp"
-import Emive from "../assets/Projetos/Emive.webp"
-import AirTek from "../assets/Projetos/Airtek.webp"
-import Cascar from "../assets/Projetos/Cascar.webp"
-import PoupeMais from "../assets/Projetos/PoupeMais.webp"
+import SiteNote from "@/app/assets/Projetos/SiteNote.webp"
+import PetValley from "@/app/assets/Projetos/PetValley.webp"
+import DevBurguer from "@/app/assets/Projetos/DevBurguer.webp"
+import CadMetas from "@/app/assets/Projetos/CadMetas.webp"
+import FormNasa from "@/app/assets/Projetos/FormNasa.webp"
+import FormFusion from "@/app/assets/Projetos/FormFusion.webp"
+import GaleriaDev from "@/app/assets/Projetos/GaleriaDev.webp"
+import Supermarket from "@/app/assets/Projetos/Supermarket.webp"
+import Despesas from "@/app/assets/Projetos/Reembolso.webp"
+import Todolist from "@/app/assets/Projetos/To-do-list.webp"
+import gdr from "@/app/assets/Projetos/gdr.webp"
+import Loki from "@/app/assets/Projetos/Loki.webp"
+import TrocaExe from "@/app/assets/Projetos/TrocaExe.webp"
+import Emive from "@/app/assets/Projetos/Emive.webp"
+import AirTek from "@/app/assets/Projetos/Airtek.webp"
+import Cascar from "@/app/assets/Projetos/Cascar.webp"
+import PoupeMais from "@/app/assets/Projetos/PoupeMais.webp"
 
 const PROJETO = [
                 {
@@ -148,3 +148,6 @@ const PROJETO = [
                     codeUrl: "https://github.com/DevTec2020/To-do-list"                    
                 }
             ]
+
+
+export default PROJETO;
