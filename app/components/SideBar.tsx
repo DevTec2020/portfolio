@@ -38,17 +38,17 @@ export default function SideBar({ onClose } : SideBarProps) {
         </div>
 
         <nav className="flex flex-col gap-1 text-sm uppercase tracking-widest font-medium">
-          <a href="#" onClick={onClose} className="p-3 border-b border-white/10">Home</a>
-          <a href="#sobre" onClick={onClose} className="p-3 border-b border-white/10">Sobre mim</a>
-          <a href="#habilidades" onClick={onClose} className="p-3 border-b border-white/10">Habilidades</a>
-          <a href="#projetos" onClick={onClose} className="p-3 border-b border-white/10">Projetos</a>
-          <a href="#contato" onClick={onClose} className="p-3 border-b border-white/10">Contato</a>
+          <a href="#" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Home</a>
+          <a href="#sobre" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Sobre mim</a>
+          <a href="#habilidades" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Habilidades</a>
+          <a href="#projetos" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Projetos</a>
+          <a href="#contato" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Contato</a>
           <a
             href="https://wa.me/5585985646542?text=Olá%20Leonardo.%20Vi%20seu%20portifolio%20e%20quero%20conversar%20contigo%20sobre."
             target="_blank"
             rel="noreferrer"
             onClick={onClose}
-            className="text-left flex items-center w-full p-3 rounded-lg hover:bg-white/10"
+            className="p-3 hover:bg-white/10"
           >
             Chamar no Whatsapp
           </a>
