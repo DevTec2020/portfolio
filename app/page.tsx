@@ -6,8 +6,6 @@ import  EuSobre from "@/app/assets/EuSobre.webp"
 import SideBar from "@/app/components/SideBar";
 
 
-
-
 import gdr from "@/app/assets/empresas/gdr.webp"
 import fortes from "@/app/assets/empresas/fortes.webp"
 import fusion from "@/app/assets/empresas/fusion.webp"
@@ -17,10 +15,12 @@ import emive from "@/app/assets/empresas/Emive.webp"
 import Airtek from "@/app/assets/empresas/Air-tek.webp"
 import Cascar from "@/app/assets/empresas/Cascar.webp"
 import Otica from "@/app/assets/empresas/Logo_amarela.webp"
+import kalita from "@/app/assets/empresas/kalita.webp"
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5, faCss3Alt, faJsSquare, faGitAlt, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJsSquare, faGitAlt, faPython, faReact, faNodeJs, faDocker, faFigma, faAws  } from '@fortawesome/free-brands-svg-icons';
 import { faDownload, faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { motion, AnimatePresence } from 'framer-motion';
@@ -33,26 +33,24 @@ export default function Home(){
   const icone = isOpen ? faXmark : faBars;
 
   return (
-    <div className="bg-[#0a0a0a] text-white min-h-screen font-sans selection:bg-cyan-500 selection:text-black">
+    <div className="bg-[#0a0a0a] text-white min-h-screen font-sans">
       <header className="absolute top-0 left-0 w-full z-50">
         <div className="container mx-auto px-6 flex justify-between items-center h-24">
-          {/* LOGO */}
           <span className="text-cyan-400 font-bold text-2xl tracking-tighter hover:scale-105 transition-transform cursor-default">
             &lt;LB/&gt;
           </span>
 
-          {/* LINKS DESKTOP */}
+          {/* NAVBAR DESKTOP */}
           <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium">
             <a href="#" className="hover:text-cyan-400 transition">Home</a>
             <a href="#sobre" className="hover:text-cyan-400 transition">Sobre mim</a>
             <a href="#habilidades" className="hover:text-cyan-400 transition">Habilidades</a>
             <a href="#projetos" className="hover:text-cyan-400 transition">Projetos</a>
-            <a href="#contato" className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
-             bg-cyan-500/10 backdrop-blur-md 
-             hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
-             transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
-             hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
+            <a href="#contato" className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-md hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+              transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
+              
               Contato
+            
             </a>
           </nav>
 
@@ -131,6 +129,7 @@ export default function Home(){
             <Image src={gdr} alt="Logo GDR" width={120} height={120} className="grayscale hover:grayscale-0"/>
             <Image src={fortes} alt="Logo Fortes" width={120} height={120} className="grayscale hover:grayscale-0"/>
             <Image src={fusion} alt="Logo Fusion" width={120} height={120} className="grayscale hover:grayscale-0"/>
+            <Image src={kalita} alt="Logo kalita" width={90} height={100} className="grayscale hover:grayscale-0"/>
             <Image src={flyjobs} alt="Logo Flyjobs" width={120} height={120} className="grayscale hover:grayscale-0"/>
             <Image src={mvx} alt="Logo MVX" width={120} height={120} className="grayscale hover:grayscale-0"/>
             <Image src={emive} alt="Logo Emive" width={120} height={120} className="grayscale hover:grayscale-0"/>
@@ -151,14 +150,14 @@ export default function Home(){
             />
         </div>
         <div>
-          <h3 className="text-3xl font-bold mb-6">Sobre <span className="text-cyan-400">mim</span></h3>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            Sou desenvolvedor Web Front-end com experiência prática em React, Tailwind CSS e JavaScript, atuando no desenvolvimento, migração e gerenciamento de sites em ambientes como cPanel e HostGator. 
-            Tenho conhecimento em automações com Python, voltadas à otimização de rotinas e aumento de produtividade. Participação ativa em eventos e comunidades de tecnologia, sempre em busca das melhores práticas e tendências do setor.
+          <h3 className="text-3xl font-bold mb-6 ">Sobre <span className="text-cyan-400">mim</span></h3>
+          <p className="text-gray-300 text-lg mb-6">
+            Desenvolvedor Web Front-end especializado em construir interfaces modernas e performáticas com React, Next e Tailwind CSS. Meu conhecimento une o design responsivo à eficiência do código, complementada por habilidade em automação com Python para otimizar fluxos de trabalho e reduzir tarefas repetitivas. 
+            Gosto de desenvolver soluções simples e escaláveis que resolvem problemas complexos.
           </p>
 
           <h3 className="text-3xl font-bold mb-6 text-cyan-400">Certificações</h3>
-          <div className="mb-6">
+          <div className="mb-10 text-lg">
             <p>ITIL v3</p>
             <p>RWPC - Remote Worker</p>
             <p>Scrum Foundation</p>
@@ -179,19 +178,57 @@ export default function Home(){
       {/* HABILIDADES (Ícones Centralizados) */}
       <section id="habilidades" className="py-20 bg-[#0f0f0f]">
         <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400 uppercase tracking-widest">Habilidades</h3>
-        <div className="flex flex-wrap justify-center gap-12 text-6xl text-gray-600">
-            <FontAwesomeIcon icon={faHtml5} className="hover:text-orange-500 transition cursor-help" title="HTML5" />
-            <FontAwesomeIcon icon={faCss3Alt} className="hover:text-blue-500 transition cursor-help" title="CSS3" />
-            <FontAwesomeIcon icon={faJsSquare} className="hover:text-yellow-400 transition cursor-help" title="JavaScript" />
-            <FontAwesomeIcon icon={faReact} className="hover:text-cyan-400 transition cursor-help" title="React" />
-            <FontAwesomeIcon icon={faPython} className="hover:text-blue-400 transition cursor-help" title="Python" />
-            <FontAwesomeIcon icon={faGitAlt} className="hover:text-red-500 transition cursor-help" title="Git" />
+        <div className="mx-40 flex flex-wrap justify-center gap-12 text-6xl text-gray-600">
+          {/* Linguagens e Core */}
+            <FontAwesomeIcon icon={faHtml5} className="hover:text-orange-500 transition" title="HTML5" />
+            <FontAwesomeIcon icon={faCss3Alt} className="hover:text-blue-500 transition" title="CSS3" />
+            <FontAwesomeIcon icon={faJsSquare} className="hover:text-yellow-400 transition" title="JavaScript" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="h-10" alt="typescript logo"  />
+            <FontAwesomeIcon icon={faPython} className="hover:text-blue-400 transition" title="Python" />
+
+
+            {/* Frameworks Front-end */}
+            <FontAwesomeIcon icon={faReact} className="hover:text-cyan-400 transition" title="React" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="h-10" alt="nextjs logo" />
+
+            {/* Estilização */}
+            <img src="https://skillicons.dev/icons?i=bootstrap" className="h-10" alt="bootstrap logo"  />
+            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" className="h-10" alt="tailwindcss logo"  />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg" className="h-10" alt="bulma logo" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" className="h-10" alt="sass logo"  />
+
+            {/* Back-end e Ferramentas */}
+            <FontAwesomeIcon icon={faNodeJs} className="hover:text-green-500 transition" />
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="h-10" alt="express logo"  />
+            <img src="https://cdn.simpleicons.org/prisma/2D3748" className="h-10" alt="prisma logo" />
+            <img src="https://vite.dev/logo.svg" className="h-10" alt="vite logo" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" className="h-10" alt="electron logo" />
+            <img src="https://cdn.simpleicons.org/zod/3178C6" className="h-10" alt="zod logo" />
+            <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" className="h-10" alt="hook form logo"/>
+
+            {/* Bancos de Dados */}
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" className="h-10" alt="postgresql logo"  />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" className="h-10" alt="microsoftsqlserver logo"  />
+            {/* <img src={firebird} className="h-10" alt="firebird logo" /> */}
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="h-10" alt="firebase logo" />
+
+            {/* DevOps e Cloud */}
+            <FontAwesomeIcon icon={faDocker} className="hover:text-blue-500 transition" />
+            <FontAwesomeIcon icon={faGitAlt} className="hover:text-red-500 transition" title="Git" />
+            <FontAwesomeIcon icon={faAws} className="hover:text-orange-400 transition" />
+            
+            {/* Design e Testes */}
+            <FontAwesomeIcon icon={faFigma} className="hover:text-purple-500 transition" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" className="h-10" alt="jest logo"/>
+
+            
         </div>
       </section>
 
       {/* PROJETOS (Cards com Overlay Roxo no exemplo, agora Azul) */}
       <section id="projetos" className="py-20 px-10 md:px-32">
-        <h3 className="text-3xl font-bold text-center mb-16 uppercase">Projetos</h3>
+        <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400 uppercase tracking-widest">Projetos</h3>
         <div className="grid md:grid-cols-3 gap-8">
           {[1, 2, 3].map((item) => (
             <div key={item} className="bg-[#151515] p-1 rounded-xl group overflow-hidden border border-white/5 hover:border-cyan-500/50 transition">
@@ -211,7 +248,7 @@ export default function Home(){
         </div>
       </section>
 
-      {/* SOFT SKILLS (Box Centralizado) */}
+      {/* SOFT SKILLS (Box Centralizado) 
       <section className="py-20 px-10 flex justify-center">
         <div className="bg-[#111] p-10 rounded-3xl border border-white/5 max-w-4xl w-full text-center">
           <h3 className="text-2xl font-bold text-cyan-400 mb-8 uppercase">Soft Skills</h3>
@@ -232,7 +269,7 @@ export default function Home(){
         </div>
       </section>
 
-      {/* CONTATO (Formulário igual ao da Lorrane) */}
+      CONTATO (Formulário igual ao da Lorrane) 
       <section id="contato" className="py-20 px-10 md:px-32">
         <h3 className="text-3xl font-bold text-center mb-12 uppercase tracking-tighter">Entre em <span className="text-cyan-400">Contato</span></h3>
         <div className="max-w-xl mx-auto flex flex-col gap-6">
@@ -256,7 +293,7 @@ export default function Home(){
                </a>
            </div>
         </div>
-      </section>
+      </section>*/}
 
       <footer className="py-10 text-center text-xs text-gray-600 border-t border-white/5">
         Copyright © Leonardo Batista | Todos os direitos reservados.
