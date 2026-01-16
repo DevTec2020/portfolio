@@ -16,7 +16,7 @@ import AirTek from "@/app/assets/Projetos/Airtek.webp"
 import Cascar from "@/app/assets/Projetos/Cascar.webp"
 import PoupeMais from "@/app/assets/Projetos/PoupeMais.webp"
 
-const PROJETO = [
+const PROJETOSTODOS = [
                 {
                     image: PoupeMais,
                     title: "Ótica Poupe Mais",
@@ -150,4 +150,4 @@ const PROJETO = [
             ]
 
 
-export default PROJETO;
+export default PROJETOSTODOS;

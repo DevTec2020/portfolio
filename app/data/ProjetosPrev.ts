@@ -1,5 +1,6 @@
 import DevBurguer from "@/app/assets/Projetos/DevBurguer.webp"
 import PoupeMais from "@/app/assets/Projetos/PoupeMais.webp"
+import GaleriaDev from "@/app/assets/Projetos/GaleriaDev.webp"
 
 const PROJETOSPREV = [
                 {
@@ -19,6 +20,14 @@ const PROJETOSPREV = [
                     description: "Cardápio Online com envio de pedidos diretamente para o WhatsApp.",
                     appUrl: "https://dev-burguer-jade.vercel.app",
                     codeUrl: "https://github.com/DevTec2020/DevBurguer"
+                },{
+                    image: GaleriaDev,
+                    title: "GaleriaDev",
+                    tag: "Sistema Web",
+                    stacks: ["React", "Tailwind", "TypeScript", "API"],
+                    description: "Galeria dinâmica que busca imagens via API, permitindo salvar favoritas com persistência em localStorage.",
+                    appUrl: "https://galeriadev.vercel.app",
+                    codeUrl: "https://github.com/DevTec2020/GaleriaDev"                    
                 },
             ]
 
