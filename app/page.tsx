@@ -253,10 +253,6 @@ export default function Home(){
            </div>
         </div>
       </section>*/}
-
-      <footer className="py-10 text-center text-xs text-gray-600 border-t border-white/5">
-        Copyright © Leonardo Batista | Todos os direitos reservados.
-      </footer>
     </>
   );
 };
