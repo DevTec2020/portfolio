@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 interface SideBarProps {
@@ -38,12 +39,12 @@ export default function SideBar({ onClose } : SideBarProps) {
         </div>
 
         <nav className="flex flex-col gap-1 text-sm uppercase tracking-widest font-medium">
-          <a href="#" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Home</a>
-          <a href="#sobre" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Sobre mim</a>
-          <a href="#habilidades" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Habilidades</a>
-          <a href="#projetos" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Projetos</a>
-          <a href="#contato" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Contato</a>
-          <a
+          <Link href="/" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Home</Link>
+          <Link href="/#sobre" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Sobre mim</Link>
+          <Link href="/#habilidades" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Habilidades</Link>
+          <Link href="/#projetos" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Projetos</Link>
+          <Link href="/#contato" onClick={onClose} className="p-3 border-b border-white/10 hover:bg-white/10">Contato</Link>
+          <Link
             href="https://wa.me/5585985646542?text=Olá%20Leonardo.%20Vi%20seu%20portifolio%20e%20quero%20conversar%20contigo%20sobre."
             target="_blank"
             rel="noreferrer"
@@ -51,7 +52,7 @@ export default function SideBar({ onClose } : SideBarProps) {
             className="p-3 hover:bg-white/10"
           >
             Chamar no Whatsapp
-          </a>
+          </Link>
         </nav>
       </motion.aside>
     </>
