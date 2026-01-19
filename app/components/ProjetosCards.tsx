@@ -1,46 +1,76 @@
 'use client';
-import Image, {StaticImageData} from "next/image";
-import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import Image, { StaticImageData } from "next/image";
 
 interface DataProjetos {
     image: StaticImageData | string;
-    title: string
-    tag: string
-    stacks: string[]
-    description: string
-    appUrl: string
-    codeUrl: string
+    title: string;
+    tag: string;
+    stacks: string[];
+    description: string;
+    appUrl: string;
+    codeUrl: string;
 }
 
-export default function ProjetosCards({dados}: {dados: DataProjetos[]}){
-    return(
+export default function ProjetosCards({ dados }: { dados: DataProjetos[] }) {
+    return (
         <div className="grid md:grid-cols-3 gap-8 mb-12">
             {dados.map((projeto, item) => (
-                <div key={item} className="bg-[#151515] p-1 rounded-xl group overflow-hidden border border-white/5 hover:border-cyan-500/50 transition">
-                    <div className="h-48 bg-neutral-800 rounded-t-lg mb-4 flex items-center justify-center italic text-gray-500">
-                        <Image 
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                        src={projeto.image} 
-                        alt={`Projeto ${projeto.title}`}
-                        loading="lazy"
+                <div 
+                    key={item} 
+                    className="bg-[#151515] p-4 rounded-xl group border border-white/5 hover:border-cyan-500/50 transition flex flex-col h-full"
+                >
+                    {/* Imagem */}
+                    <div className="h-64 bg-neutral-800 rounded-lg mb-4 overflow-hidden shrink-0">
+                        <Image
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            src={projeto.image}
+                            alt={`Projeto ${projeto.title}`}
+                            loading="lazy"
                         />
-                    
                     </div>
-                    <div className="p-4 text-center">
-                        <p className="text-sm text-gray-400 mb-4 italic">
-                            {projeto.description}
-                        </p>
-                        
-                        <button className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
-                                            bg-cyan-500/10 backdrop-blur-md 
-                                            hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
-                                            transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
-                                            hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
-                            Ver Projeto
-                        </button>
+
+                    <div className="flex flex-col flex-grow space-y-4">
+                        {/* Titulo */}
+                        <div className="shrink-0">
+                            <h3 className="text-white text-2xl font-bold truncate">
+                                {projeto.title}
+                            </h3>
+                        </div>
+
+                        {/* Stacks */}
+                        <div className="flex flex-wrap gap-2 h-14 overflow-hidden items-start shrink-0">
+                            {projeto.stacks.map((stack, idx) => (
+                                <span
+                                    key={idx}
+                                    className="px-2 py-0.5 rounded-sm text-xs text-cyan-400 border border-cyan-500/50 bg-cyan-500/10"
+                                >
+                                    {stack}
+                                </span>
+                            ))}
+                        </div>
+
+                        {/* Descrição */}
+                        <div className="flex-grow">
+                            <p className="text-sm text-gray-400 italic line-clamp-3 leading-relaxed">
+                                {projeto.description}
+                            </p>
+                        </div>
+
+                        {/* Ícones */}
+                        <div className="flex justify-center md:justify-start gap-6 pt-4 text-3xl text-cyan-400 shrink-0">
+                            <a href={projeto.codeUrl} target='_blank' rel="noopener noreferrer" className="hover:scale-110 transition">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                            <a href={projeto.appUrl} target='_blank' rel="noopener noreferrer" className="hover:scale-110 transition">
+                                <FontAwesomeIcon icon={faRocket} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             ))}
         </div>
-    )
+    );
 }
