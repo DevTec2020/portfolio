@@ -1,8 +1,11 @@
-'use client';
+'use client'
+import Link from "next/link";
 import { useState } from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
+
 import SideBar from "@/app/components/SideBar";
 
 
@@ -20,14 +23,14 @@ export default function Header() {
         
                 {/* NAVBAR DESKTOP */}
                 <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium">
-                    <a href="#" className="hover:text-cyan-400 transition">Home</a>
-                    <a href="#sobre" className="hover:text-cyan-400 transition">Sobre mim</a>
-                    <a href="#habilidades" className="hover:text-cyan-400 transition">Habilidades</a>
-                    <a href="#projetos" className="hover:text-cyan-400 transition">Projetos</a>
-                    <a href="#contato" className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-md hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+                    <Link href="/" className="hover:text-cyan-400 transition">Home</Link>
+                    <Link href="/#sobre" className="hover:text-cyan-400 transition">Sobre mim</Link>
+                    <Link href="/#habilidades" className="hover:text-cyan-400 transition">Habilidades</Link>
+                    <Link href="/#projetos" className="hover:text-cyan-400 transition">Projetos</Link>
+                    <Link href="/#contato" className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-md hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
                                                     transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
                         Contato
-                    </a>
+                    </Link>
                 </nav>
     
                 {/* BOTÃO MOBILE */}
