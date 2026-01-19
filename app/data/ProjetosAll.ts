@@ -16,7 +16,7 @@ import AirTek from "@/app/assets/Projetos/Airtek.webp"
 import Cascar from "@/app/assets/Projetos/Cascar.webp"
 import PoupeMais from "@/app/assets/Projetos/PoupeMais.webp"
 
-const PROJETOSTODOS = [
+const PROJETOSALL = [
                 {
                     image: PoupeMais,
                     title: "Ótica Poupe Mais",
@@ -56,16 +56,16 @@ const PROJETOSTODOS = [
                     tag: "Automação",
                     stacks: ["Python", "Tkinter"],
                     description: "Sistema que automatiza a criação de ambientes nuvem para a Fortes.",
-                    appUrl: null,
-                    codeUrl: null                    
+                    appUrl: "",
+                    codeUrl: ""                    
                 },{
                     image: TrocaExe,
                     title: "TrocaExe",
                     tag: "Automação",
                     stacks: ["Python", "Tkinter"],
                     description: "Sistema que realiza a troca de executáveis em lote na nuvem da Fortes.",
-                    appUrl: null,
-                    codeUrl: null                    
+                    appUrl: "",
+                    codeUrl: ""                    
                 },{
                     image: SiteNote,
                     title: "SiteNote",
@@ -96,7 +96,7 @@ const PROJETOSTODOS = [
                     tag: "Sistema Back-end",
                     stacks: ["JavaScript", "NodeJs", "Json"],
                     description: "Gerencia metas via linha de comando, permitindo cadastro, marcação, visualização, exclusão e persistência em JSON.",
-                    appUrl: null,
+                    appUrl: "",
                     codeUrl: "https://github.com/DevTec2020/CadMetas"
                 }, {
                     image: FormNasa,
@@ -150,4 +150,4 @@ const PROJETOSTODOS = [
             ]
 
 
-export default PROJETOSTODOS;
+export default PROJETOSALL;

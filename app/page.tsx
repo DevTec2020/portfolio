@@ -4,6 +4,7 @@ import Image from "next/image";
 import  EuCapa from "@/app/assets/EuCapa.jpg"
 import  EuSobre from "@/app/assets/EuSobre.webp"
 
+import Link from "next/link";
 
 import gdr from "@/app/assets/empresas/gdr.webp"
 import fortes from "@/app/assets/empresas/fortes.webp"
@@ -17,7 +18,9 @@ import Otica from "@/app/assets/empresas/Logo_amarela.webp"
 import kalita from "@/app/assets/empresas/kalita.webp"
 
 
-import ProjetosPrevia from "./components/Projetos";
+import ProjetosCards from "./components/ProjetosCards";
+import PROJETOSPREV from "./data/ProjetosPrev";
+
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -184,7 +187,22 @@ export default function Home(){
       </section>
 
       {/* PROJETOS (Cards com Overlay Roxo no exemplo, agora Azul) */}
-      <ProjetosPrevia/>
+      <section id="projetos" className="py-14 px-10 md:px-32">
+        <h3 className="text-3xl font-bold text-center mb-20 text-cyan-400 uppercase tracking-widest">Projetos</h3>
+        <ProjetosCards dados={PROJETOSPREV}/>
+        
+        <div className="p-4 text-center">
+          <Link href="/projetos">
+              <button className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
+                                  bg-cyan-500/10 backdrop-blur-md 
+                                  hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+                                  transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
+                                  hover:shadow-[0_0_25px_rgba(0,212,255,0.3)] cursor-pointer">
+                  Ver Todos os Projetos
+              </button>
+          </Link>
+        </div>
+      </section>
 
       {/* SOFT SKILLS (Box Centralizado) 
       <section className="py-20 px-10 flex justify-center">
