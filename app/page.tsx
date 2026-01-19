@@ -82,17 +82,17 @@ export default function Home(){
       {/* CLIENTES */}
       <section className="py-20 bg-[#0f0f0f]">
         <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400 uppercase tracking-widest">Projetos desenvolvidos para</h3>
-        <div className="flex flex-wrap justify-center gap-12">
-            <Image src={gdr} alt="Logo GDR" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={fortes} alt="Logo Fortes" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={fusion} alt="Logo Fusion" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={kalita} alt="Logo kalita" width={90} height={100} className="grayscale hover:grayscale-0"/>
-            <Image src={flyjobs} alt="Logo Flyjobs" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={mvx} alt="Logo MVX" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={emive} alt="Logo Emive" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={Airtek} alt="Logo Airtek" width={120} height={120} className="grayscale hover:grayscale-0"/>
-            <Image src={Cascar} alt="Logo Cascar" width={190} height={100} className="grayscale hover:grayscale-0"/>
-            <Image src={Otica} alt="Logo Otica" width={170} height={100} className="grayscale hover:grayscale-0"/>
+        <div className="flex flex-wrap justify-center gap-12 px-10">
+            <Image src={gdr} alt="Logo GDR" width={100} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={fortes} alt="Logo Fortes" width={100} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={fusion} alt="Logo Fusion" width={120} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={kalita} alt="Logo kalita" width={90} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={flyjobs} alt="Logo Flyjobs" width={120} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={mvx} alt="Logo MVX" width={120} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={emive} alt="Logo Emive" width={120} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={Airtek} alt="Logo Airtek" width={120} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={Cascar} alt="Logo Cascar" width={190} className="grayscale hover:grayscale-0 object-contain"/>
+            <Image src={Otica} alt="Logo Otica" width={170} className="grayscale hover:grayscale-0 object-contain"/>
         </div>
       </section>
 
