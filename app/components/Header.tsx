@@ -27,7 +27,11 @@ export default function Header() {
                     <Link href="/#sobre" className="hover:text-cyan-400 transition">Sobre mim</Link>
                     <Link href="/#habilidades" className="hover:text-cyan-400 transition">Habilidades</Link>
                     <Link href="/#projetos" className="hover:text-cyan-400 transition">Projetos</Link>
-                    <Link href="/#contato" className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-md hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
+                    <Link 
+                        href="https://wa.me/85985646542"
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        className="px-6 py-2 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-md hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
                                                     transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] hover:shadow-[0_0_25px_rgba(0,212,255,0.3)]">
                         Contato
                     </Link>
