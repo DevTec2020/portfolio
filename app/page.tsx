@@ -24,8 +24,8 @@ import PROJETOSPREV from "./data/ProjetosPrev";
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faDownload, faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faInstagram, faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faDownload, faChevronDown, faEnvelope, faBars, faXmark, faPhoneAlt, faClock } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -204,52 +204,62 @@ export default function Home(){
         </div>
       </section>
 
-      {/* SOFT SKILLS (Box Centralizado) 
-      <section className="py-20 px-10 flex justify-center">
-        <div className="bg-[#111] p-10 rounded-3xl border border-white/5 max-w-4xl w-full text-center">
-          <h3 className="text-2xl font-bold text-cyan-400 mb-8 uppercase">Soft Skills</h3>
-          <ul className="grid md:grid-cols-2 gap-4 text-left">
-            <li className="flex items-center gap-3 text-gray-300">
-                <span className="text-cyan-400">✔</span> Resolução de Problemas Complexos
-            </li>
-            <li className="flex items-center gap-3 text-gray-300">
-                <span className="text-cyan-400">✔</span> Comunicação Técnica Assertiva
-            </li>
-            <li className="flex items-center gap-3 text-gray-300">
-                <span className="text-cyan-400">✔</span> Mentalidade Ágil (Scrum/Kanban)
-            </li>
-            <li className="flex items-center gap-3 text-gray-300">
-                <span className="text-cyan-400">✔</span> Adaptabilidade Tecnológica
-            </li>
-          </ul>
+      {/*CONTATO */}
+      <section id="contato" className="py-20 px-10 md:px-32 bg-[#0f0f0f]">
+        <div className=" rounded-xl shadow p-8">
+          <div className=" p-8  h-full">
+              <h3 className="text-3xl font-bold text-center mb-20 text-cyan-400 uppercase tracking-widest">Contato</h3>
+              
+              <div className="flex items-start mb-8 text-white">
+                  <div className="bg-cyan-400 p-3 rounded-lg mr-4">
+                      <FontAwesomeIcon icon={faPhoneAlt} className="text-xl" />
+                  </div>
+                  <div>
+                      <h4 className="font-bold">Telefone</h4>
+                      <p>(85) 98564-6542 (WhatsApp)</p>
+                  </div>
+              </div>
+              
+              <div className="flex items-start mb-8 text-white">
+                  <div className="bg-cyan-400 p-3 rounded-lg mr-4">
+                      <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
+                  </div>
+                  <div className="w-0 flex-1"> {/* garante que o conteúdo respeite o container */}
+                      <h4 className="font-bold">E-mail</h4>
+                      <a 
+                      href="mailto:Marcus.hafner@emivefranquia.com.br" 
+                      className="break-all hover:underline"
+                      >
+                      <span>leonardo.silva.inf<span className="font-sans">@</span>gmail.comr</span>
+                      </a>
+                  </div>
+              </div>
+
+              
+              {/* <div className="flex items-start text-white">
+                  <div className="bg-cyan-400 p-3 rounded-lg mr-4">
+                      <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
+                  </div>
+                  <div>
+                      <h4 className="font-bold">Horário de Atendimento</h4>
+                      <p>Segunda à Sexta: 6h às 22h</p><p></p>
+                  </div>
+              </div> */}
+              
+              <div className="mt-12">
+                  <h4 className="font-bold text-white mb-4">Siga-nos</h4>
+                  <div className="flex space-x-4">
+                      <a href="https://www.linkedin.com/in/vinicius-hafner-segurancaeletronica/" target='_blank' className="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center text-brand-gray-dark hover:bg-brand-yellow transition">
+                          <FontAwesomeIcon icon={faLinkedinIn} />
+                      </a>
+                      <a href="https://www.instagram.com/viniciushafner.franqueado" target='_blank' className="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center text-brand-gray-dark hover:bg-brand-yellow transition">
+                          <FontAwesomeIcon icon={faInstagram} />
+                      </a>
+                  </div>
+              </div>
+          </div>
         </div>
       </section>
-
-      CONTATO (Formulário igual ao da Lorrane) 
-      <section id="contato" className="py-20 px-10 md:px-32">
-        <h3 className="text-3xl font-bold text-center mb-12 uppercase tracking-tighter">Entre em <span className="text-cyan-400">Contato</span></h3>
-        <div className="max-w-xl mx-auto flex flex-col gap-6">
-           <div className="flex flex-col gap-2">
-             <label className="text-sm font-bold ml-1 italic">Nome:</label>
-             <input type="text" className="bg-white text-black p-3 rounded outline-none focus:ring-2 ring-cyan-500 transition" />
-           </div>
-           <div className="flex flex-col gap-2">
-             <label className="text-sm font-bold ml-1 italic">E-mail:</label>
-             <input type="email" className="bg-white text-black p-3 rounded outline-none focus:ring-2 ring-cyan-500 transition" />
-           </div>
-           <div className="flex flex-col gap-2">
-             <label className="text-sm font-bold ml-1 italic">Mensagem:</label>
-             <textarea className="bg-white text-black p-3 rounded h-32 outline-none focus:ring-2 ring-cyan-500 transition"></textarea>
-           </div>
-           
-           <div className="flex flex-col gap-4">
-               <button className="bg-cyan-600 text-black font-black py-4 rounded hover:bg-cyan-400 transition uppercase">Enviar Mensagem</button>
-               <a href="https://wa.me/SEU_NUMERO" className="bg-green-600 text-white font-black py-4 rounded hover:bg-green-500 transition uppercase text-center flex items-center justify-center gap-2">
-                  <FontAwesomeIcon icon={faWhatsapp} /> Chamar no WhatsApp
-               </a>
-           </div>
-        </div>
-      </section>*/}
     </>
   );
 };
