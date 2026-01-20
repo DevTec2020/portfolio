@@ -16,7 +16,7 @@ export default function Header() {
     return(
         <>
         <header className="absolute md:px-10 top-0 left-0 w-full z-50 ">
-            <div className="container mx-auto px-6 flex justify-between items-center h-24">
+            <div className="container mx-auto px-6 md:px-0 flex justify-between items-center h-24">
                 <span className="text-cyan-400 font-bold text-2xl tracking-tighter hover:scale-105 transition-transform cursor-default">
                     &lt;LB/&gt;
                 </span>

@@ -16,7 +16,7 @@ interface DataProjetos {
 
 export default function ProjetosCards({ dados }: { dados: DataProjetos[] }) {
     return (
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {dados.map((projeto, item) => (
                 <div 
                     key={item} 
@@ -54,7 +54,7 @@ export default function ProjetosCards({ dados }: { dados: DataProjetos[] }) {
 
                         {/* Descrição */}
                         <div className="flex-grow">
-                            <p className="text-sm text-gray-400 italic line-clamp-3 leading-relaxed">
+                            <p className="text-md text-gray-400 italic line-clamp-3 leading-relaxed">
                                 {projeto.description}
                             </p>
                         </div>

@@ -102,7 +102,7 @@ export default function Home(){
 
 
       {/* SOBRE MIM */}
-      <section id="sobre" className="py-20 px-10 md:px-32 flex flex-col md:flex-row items-center gap-16">
+      <section id="sobre" className="py-20 px-10 md:px-32 flex flex-col lg:flex-row items-center gap-16">
         <div className="w-64 h-64 md:w-96 md:h-96 shrink-0 rounded-full overflow-hidden border-4 border-cyan-500 shadow-[0_0_30px_rgba(0,242,255,0.2)]">
             <Image
               src={EuSobre} 
@@ -218,10 +218,9 @@ export default function Home(){
                       <div className="bg-cyan-400 p-3 rounded-lg mr-4">
                           <FontAwesomeIcon icon={contato.icon} className="text-xl" />
                       </div>
-                      <div>
-                          <h4 className="font-bold">{contato.label}</h4>
-                          
-                            <span>{contato.val}</span>
+                      <div className="text-white min-w-0">
+                          <h4 className="font-bold text-lg leading-tight">{contato.label}</h4>
+                          <p className="text-md opacity-80 break-words">{contato.val}</p>
                       </div>
                   </div>
                 </a>
