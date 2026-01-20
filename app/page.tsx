@@ -20,6 +20,7 @@ import kalita from "@/app/assets/empresas/kalita.webp"
 
 import ProjetosCards from "./components/ProjetosCards";
 import PROJETOSPREV from "./data/ProjetosPrev";
+import CONTATOS from "./data/Contatos";
 
 
 
@@ -84,7 +85,7 @@ export default function Home(){
 
       {/* CLIENTES */}
       <section className="py-20 bg-[#0f0f0f]">
-        <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400 uppercase tracking-widest">Projetos desenvolvidos para</h3>
+        <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400 uppercase tracking-widest px-10 md:px-0">Projetos desenvolvidos para</h3>
         <div className="flex flex-wrap justify-center gap-12 px-10">
             <Image src={gdr} alt="Logo GDR" width={100} className="grayscale hover:grayscale-0 object-contain"/>
             <Image src={fortes} alt="Logo Fortes" width={100} className="grayscale hover:grayscale-0 object-contain"/>
@@ -205,60 +206,27 @@ export default function Home(){
       </section>
 
       {/*CONTATO */}
-      <section id="contato" className="py-20 px-10 md:px-32 bg-[#0f0f0f]">
-        <div className=" rounded-xl shadow p-8">
-          <div className=" p-8  h-full">
-              <h3 className="text-3xl font-bold text-center mb-20 text-cyan-400 uppercase tracking-widest">Contato</h3>
-              
-              <div className="flex items-start mb-8 text-white">
-                  <div className="bg-cyan-400 p-3 rounded-lg mr-4">
-                      <FontAwesomeIcon icon={faPhoneAlt} className="text-xl" />
+      <section className="py-20 px-10 md:px-32 bg-[#0f0f0f]">
+          <h3 className="text-3xl font-bold text-center mb-20 text-cyan-400 uppercase tracking-widest">
+            Contato
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {CONTATOS.map((contato, item) => (
+                <a href={contato.link}  target="_blank" rel="noopener noreferrer">
+                  <div key={item} className="flex items-center p-5 rounded-xl bg-[#161616] border border-transparent hover:border-cyan-400/50 transition-all duration-300 group">
+                      <div className="bg-cyan-400 p-3 rounded-lg mr-4">
+                          <FontAwesomeIcon icon={contato.icon} className="text-xl" />
+                      </div>
+                      <div>
+                          <h4 className="font-bold">{contato.label}</h4>
+                          
+                            <span>{contato.val}</span>
+                      </div>
                   </div>
-                  <div>
-                      <h4 className="font-bold">Telefone</h4>
-                      <p>(85) 98564-6542 (WhatsApp)</p>
-                  </div>
-              </div>
-              
-              <div className="flex items-start mb-8 text-white">
-                  <div className="bg-cyan-400 p-3 rounded-lg mr-4">
-                      <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
-                  </div>
-                  <div className="w-0 flex-1"> {/* garante que o conteúdo respeite o container */}
-                      <h4 className="font-bold">E-mail</h4>
-                      <a 
-                      href="mailto:Marcus.hafner@emivefranquia.com.br" 
-                      className="break-all hover:underline"
-                      >
-                      <span>leonardo.silva.inf<span className="font-sans">@</span>gmail.comr</span>
-                      </a>
-                  </div>
-              </div>
-
-              
-              {/* <div className="flex items-start text-white">
-                  <div className="bg-cyan-400 p-3 rounded-lg mr-4">
-                      <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
-                  </div>
-                  <div>
-                      <h4 className="font-bold">Horário de Atendimento</h4>
-                      <p>Segunda à Sexta: 6h às 22h</p><p></p>
-                  </div>
-              </div> */}
-              
-              <div className="mt-12">
-                  <h4 className="font-bold text-white mb-4">Siga-nos</h4>
-                  <div className="flex space-x-4">
-                      <a href="https://www.linkedin.com/in/vinicius-hafner-segurancaeletronica/" target='_blank' className="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center text-brand-gray-dark hover:bg-brand-yellow transition">
-                          <FontAwesomeIcon icon={faLinkedinIn} />
-                      </a>
-                      <a href="https://www.instagram.com/viniciushafner.franqueado" target='_blank' className="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center text-brand-gray-dark hover:bg-brand-yellow transition">
-                          <FontAwesomeIcon icon={faInstagram} />
-                      </a>
-                  </div>
-              </div>
+                </a>
+              ))}
           </div>
-        </div>
       </section>
     </>
   );
