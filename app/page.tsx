@@ -126,7 +126,9 @@ export default function Home(){
           </div>
 
 
-          <a href="SEU_LINK_DO_DOCS" className="px-6 py-4 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
+          <a href="https://docs.google.com/document/d/1RC1nj4_KHZKpE8c9zlwvZ9dIJplbxS71/edit?usp=sharing&ouid=112884871102655330365&rtpof=true&sd=true" 
+            target="_blank" rel="noopener noreferrer"
+            className="px-6 py-4 rounded-lg text-cyan-400 font-bold border border-cyan-500/50 
              bg-cyan-500/10 backdrop-blur-md 
              hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-400
              transition-all duration-300 shadow-[0_0_15px_rgba(0,212,255,0.1)] 
@@ -206,15 +208,15 @@ export default function Home(){
       </section>
 
       {/*CONTATO */}
-      <section className="py-20 px-10 md:px-32 bg-[#0f0f0f]">
+      <section id="contato" className="py-14 px-10 md:px-32 bg-[#0f0f0f]">
           <h3 className="text-3xl font-bold text-center mb-20 text-cyan-400 uppercase tracking-widest">
             Contato
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {CONTATOS.map((contato, item) => (
-                <a href={contato.link}  target="_blank" rel="noopener noreferrer">
-                  <div key={item} className="flex items-center p-5 rounded-xl bg-[#161616] border border-transparent hover:border-cyan-400/50 transition-all duration-300 group">
+                <a key={item} href={contato.link} target="_blank" rel="noopener noreferrer">
+                  <div className="flex items-center p-5 rounded-xl bg-[#161616] border border-transparent hover:border-cyan-400/50 transition-all duration-300 group">
                       <div className="bg-cyan-400 p-3 rounded-lg mr-4">
                           <FontAwesomeIcon icon={contato.icon} className="text-xl" />
                       </div>
