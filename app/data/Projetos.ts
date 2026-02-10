@@ -48,6 +48,14 @@ export const PROJETOSPREV = [
 
 export const PROJETOSALL = [
     {
+        image: SysUser,
+        title: "SysUser - Sistema Desafio",
+        stacks: ["Next", "Tailwind", "JavaScript", "Bcrypt", "JWT", "Zod", "Axios"],
+        description: "Aplicação Fullstack com autenticação segura (JWT + Bcrypt), validação de dados com Zod e CRUD de usuários. Inclui também módulos de resolução de algoritmos lógicos e arquitetura.",
+        appUrl: "",
+        codeUrl: "https://github.com/DevTec2020/Teste-Veica?tab=readme-ov-file"                    
+    },
+    {
         image: PoupeMais,
         title: "Ótica Poupe Mais",
         tag: "Landing Page",
@@ -97,14 +105,6 @@ export const PROJETOSALL = [
         appUrl: "",
         codeUrl: ""                    
     },{
-        image: SiteNote,
-        title: "SiteNote",
-        tag: "Sistema Web",
-        stacks: ["HTML", "CSS", "Javascript"],
-        description: "Aplicação web projetada para ajudar a criar, editar, deletar notas e listas de tarefas de forma eficiente e intuitiva.",
-        appUrl: "https://devtec2020.github.io/SiteNotes/",
-        codeUrl: "https://github.com/DevTec2020/SiteNotes"                    
-    },{
         image: PetValley,
         title: "PetValley",
         tag: "Landing Page",
@@ -120,22 +120,6 @@ export const PROJETOSALL = [
         description: "Cardápio Online com envio de pedidos diretamente para o WhatsApp.",
         appUrl: "https://dev-burguer-jade.vercel.app",
         codeUrl: "https://github.com/DevTec2020/DevBurguer"
-    }, {
-        image: CadMetas,
-        title: "CadMetas",
-        tag: "Sistema Back-end",
-        stacks: ["JavaScript", "NodeJs", "Json"],
-        description: "Gerencia metas via linha de comando, permitindo cadastro, marcação, visualização, exclusão e persistência em JSON.",
-        appUrl: "",
-        codeUrl: "https://github.com/DevTec2020/CadMetas"
-    }, {
-        image: FormNasa,
-        title: "FormNasa",
-        tag: "Sistema Web",
-        stacks: ["HTML", "SASS", "Bootstrap"],
-        description: "Formulário minimalista, onde estudei Bootstrap, focado na simplicidade e eficiência.",
-        appUrl: "https://devtec2020.github.io/FormNasa/",
-        codeUrl: "https://github.com/DevTec2020/FormNasa"
     }, {
         image: FormFusion,
         title: "FormFusion",
@@ -176,5 +160,29 @@ export const PROJETOSALL = [
         description: "Lista de terefas com contador para controle das tasks.",
         appUrl: "https://to-do-list-omega-flame.vercel.app",
         codeUrl: "https://github.com/DevTec2020/To-do-list"                    
+    }, {
+        image: SiteNote,
+        title: "SiteNote",
+        tag: "Sistema Web",
+        stacks: ["HTML", "CSS", "Javascript"],
+        description: "Aplicação web projetada para ajudar a criar, editar, deletar notas e listas de tarefas de forma eficiente e intuitiva.",
+        appUrl: "https://devtec2020.github.io/SiteNotes/",
+        codeUrl: "https://github.com/DevTec2020/SiteNotes"                    
+    },{
+        image: CadMetas,
+        title: "CadMetas",
+        tag: "Sistema Back-end",
+        stacks: ["JavaScript", "NodeJs", "Json"],
+        description: "Gerencia metas via linha de comando, permitindo cadastro, marcação, visualização, exclusão e persistência em JSON.",
+        appUrl: "",
+        codeUrl: "https://github.com/DevTec2020/CadMetas"
+    }, {
+        image: FormNasa,
+        title: "FormNasa",
+        tag: "Sistema Web",
+        stacks: ["HTML", "SASS", "Bootstrap"],
+        description: "Formulário minimalista, onde estudei Bootstrap, focado na simplicidade e eficiência.",
+        appUrl: "https://devtec2020.github.io/FormNasa/",
+        codeUrl: "https://github.com/DevTec2020/FormNasa"
     }
 ]

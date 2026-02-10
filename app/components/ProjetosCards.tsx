@@ -7,7 +7,6 @@ import Image, { StaticImageData } from "next/image";
 interface DataProjetos {
     image: StaticImageData | string;
     title: string;
-    tag: string;
     stacks: string[];
     description: string;
     appUrl: string;
@@ -64,7 +63,7 @@ export default function ProjetosCards({ dados }: { dados: DataProjetos[] }) {
                             <a href={projeto.codeUrl} target='_blank' rel="noopener noreferrer" className="hover:scale-110 transition">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            <a href={projeto.appUrl} target='_blank' rel="noopener noreferrer" className="hover:scale-110 transition">
+                            <a href={projeto.appUrl} target='_blank' rel="noopener noreferrer" className={projeto.appUrl === "" ? "hidden" : "hover:scale-110 transition"}>
                                 <FontAwesomeIcon icon={faRocket} />
                             </a>
                         </div>
