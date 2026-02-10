@@ -19,7 +19,7 @@ import kalita from "@/app/assets/empresas/kalita.webp"
 
 
 import ProjetosCards from "./components/ProjetosCards";
-import PROJETOSPREV from "./data/ProjetosPrev";
+import { PROJETOSPREV } from "./data/Projetos";
 import CONTATOS from "./data/Contatos";
 
 

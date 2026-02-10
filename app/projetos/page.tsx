@@ -1,6 +1,6 @@
 'use client';
 import ProjetosCards from "../components/ProjetosCards";
-import PROJETOSALL from "../data/ProjetosAll";
+import { PROJETOSALL } from "../data/Projetos";
 
 export default function ProjetosPage(){
     return(
